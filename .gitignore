@@ -1,0 +1,63 @@
+# ══════════════════════════════════════════════════════════════
+# HireTrend - Git Ignore Configuration
+# ══════════════════════════════════════════════════════════════
+
+# ── 1. Big Data & Raw Datasets (Do NOT commit multi-GB files) ──
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+!sample_demo.jsonl
+data/
+raw_*.csv
+raw_*.parquet
+merged_*.jsonl
+norm_*.jsonl
+clean.jsonl
+
+# ── 2. SQLite / Local Databases ──────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+temp_merge_*.db
+
+# ── 3. Python Virtual Environments & Caches ───────────────────
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── 4. Frontend & Node.js Artifacts ───────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── 5. Environment Variables & Secrets ────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── 6. Logs & Runtime Output ──────────────────────────────────
+*.log
+logs/
+.system_generated/
+
+# ── 7. OS & Editor Metadata ───────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

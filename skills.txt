@@ -1,0 +1,6938 @@
+python
+java
+c++
+c#
+javascript
+typescript
+html
+css
+react
+reactjs
+react.js
+angular
+vue
+vue.js
+node
+nodejs
+node.js
+express
+expressjs
+django
+flask
+fastapi
+spring
+spring boot
+dotnet
+.net
+asp.net
+sql
+mysql
+postgresql
+postgres
+mongodb
+redis
+cassandra
+oracle
+sqlite
+dynamodb
+elasticsearch
+graphql
+rest api
+restful
+grpc
+aws
+azure
+gcp
+google cloud
+docker
+kubernetes
+k8s
+terraform
+ansible
+jenkins
+ci/cd
+github actions
+git
+linux
+bash
+shell
+hadoop
+hdfs
+mapreduce
+spark
+apache spark
+kafka
+apache kafka
+airflow
+databricks
+snowflake
+power bi
+powerbi
+tableau
+excel
+pandas
+numpy
+scipy
+scikit-learn
+sklearn
+tensorflow
+pytorch
+keras
+nlp
+natural language processing
+computer vision
+machine learning
+deep learning
+llm
+genai
+generative ai
+prompt engineering
+langchain
+huggingface
+statistics
+data analysis
+data visualization
+agile
+scrum
+jira
+unit testing
+jest
+pytest
+selenium
+cypress
+microservices
+system design
+distributed systems
+oop
+object-oriented
+cybersecurity
+penetration testing
+devops
+mlops
+data engineering
+backend
+frontend
+fullstack
+full stack
+graphql
+golang
+go
+rust
+scala
+r
+swift
+kotlin
+android
+ios
+flutter
+react native
+unix
+security
+devsecops
+tableau
+dbt
+looker
+spark sql
+hive
+pig
+flink
+nosql
+cloud computing
+rest
+api
+algorithms
+data structures
+ci cd
+cd/ci
+promql
+prometheus
+grafana
+elk
+datadog
+splunk
+new relic
+maven
+gradle
+npm
+yarn
+pnpm
+vite
+webpack
+tailwind
+tailwindcss
+bootstrap
+sass
+less
+redux
+zustand
+mobx
+prisma
+hibernate
+jpa
+typeorm
+sqlalchemy
+beautifulsoup
+selenium
+scrapy
+openai
+claude
+gemini
+hugging face
+transformers
+bert
+gpt
+rag
+vector database
+pinecone
+weaviate
+chromadb
+faiss
+qdrant
+milvus
+neo4j
+graph database
+networking
+tcp/ip
+dns
+load balancing
+reverse proxy
+nginx
+apache
+traefik
+oauth
+jwt
+saml
+sso
+keycloak
+vault
+hashicorp vault
+helm
+istio
+argocd
+flux
+sonarqube
+trivy
+owasp
+sast
+dast
+iam
+active directory
+ldap
+linux administration
+system administration
+network engineering
+cloud architecture
+database administration
+dba
+performance tuning
+debugging
+troubleshooting
+cloudformation
+boto3
+pydantic
+sqlalchemy
+asyncio
+multithreading
+concurrency
+web scraping
+etl
+elt
+data pipeline
+data warehouse
+data lake
+lakehouse
+big data
+bi
+business intelligence
+product management
+technical writing
+code review
+qa
+quality assurance
+test automation
+playwright
+mocha
+chai
+postman
+insomnia
+soap
+wsdl
+websocket
+socket.io
+sse
+grpc-web
+wasm
+webassembly
+next.js
+nextjs
+nuxt
+remix
+gatsby
+svelte
+sveltekit
+php
+laravel
+symfony
+wordpress
+drupal
+ruby
+ruby on rails
+rails
+elixir
+phoenix
+clojure
+haskell
+erlang
+perl
+r programming
+matlab
+stata
+spss
+sas
+tableau server
+alteryx
+ssis
+ssas
+ssrs
+informatica
+talend
+pentaho
+prestodb
+trino
+athena
+bigquery
+redshift
+clickhouse
+timescaledb
+cockroachdb
+yugabyte
+scylla
+neo4j
+arangodb
+faunadb
+supabase
+firebase
+amplify
+serverless
+lambda
+cloud functions
+cloud run
+fargate
+ecs
+eks
+gke
+aks
+openshift
+rancher
+consul
+nomad
+packer
+vagrant
+ansible playbook
+puppet
+chef
+saltstack
+prometheus operator
+thanos
+cortex
+loki
+tempo
+jaeger
+zipkin
+opentelemetry
+otel
+sentry
+rollbar
+pagerduty
+opsgenie
+incident management
+site reliability engineering
+sre
+chaos engineering
+gremlin
+chaos mesh
+k6
+jmeter
+locust
+artillery
+gatling
+performance testing
+load testing
+stress testing
+fuzzing
+code quality
+eslint
+prettier
+black
+flake8
+pylint
+mypy
+ruff
+sonarcloud
+snyk
+dependabot
+github security
+secret management
+kms
+secrets manager
+acm
+letsencrypt
+cert-manager
+ssl
+tls
+https
+cors
+csrf
+xss
+sql injection
+security compliance
+soc2
+iso27001
+hipaa
+gdpr
+pci dss
+risk assessment
+vulnerability assessment
+incident response
+threat modeling
+stride
+mitre att&ck
+zero trust
+least privilege
+defense in depth
+disaster recovery
+business continuity
+high availability
+failover
+backup
+restore
+replication
+clustering
+sharding
+partitioning
+indexing
+query optimization
+caching
+cdn
+cloudflare
+cloudfront
+akamai
+fastly
+edge computing
+web workers
+service workers
+pwa
+responsive design
+mobile first
+cross browser compatibility
+accessibility
+a11y
+wcag
+aria
+semantic html
+css grid
+flexbox
+css variables
+css modules
+styled components
+emotion
+chakra ui
+material ui
+mui
+ant design
+shadcn
+radix ui
+headless ui
+daisyui
+mantine
+semantic ui
+jquery
+backbone
+ember
+knockout
+coffeescript
+actionscript
+flash
+silverlight
+vb.net
+vba
+visual basic
+delphi
+pascal
+fortran
+cobol
+assembly
+x86
+arm
+risc-v
+embedded c
+embedded systems
+rtos
+freertos
+arduino
+raspberry pi
+esp32
+iot
+mqtt
+coap
+bluetooth
+ble
+zigbee
+lorawan
+can bus
+modbus
+scada
+plc
+ros
+robotics
+opencv
+pcl
+cuda
+opencl
+openmp
+mpi
+gpgpu
+hpc
+quantum computing
+qiskit
+cirq
+blockchain
+smart contracts
+solidity
+web3
+ethers.js
+web3.js
+hardhat
+foundry
+truffle
+bitcoin
+ethereum
+hyperledger
+ipfs
+defi
+nft
+dao
+consensus algorithms
+proof of work
+proof of stake
+raft
+paxos
+byzantine fault tolerance
+cryptography
+pki
+rsa
+ecc
+aes
+sha
+hash functions
+digital signatures
+zero knowledge proofs
+zk-snarks
+zk-starks
+homomorphic encryption
+differential privacy
+federated learning
+reinforcement learning
+q-learning
+dqn
+ppo
+a3c
+actor-critic
+policy gradient
+monte carlo
+genetic algorithms
+evolutionary algorithms
+swarm intelligence
+particle swarm
+simulated annealing
+bayesian optimization
+markov models
+hidden markov models
+hmm
+kalman filter
+particle filter
+time series analysis
+arima
+sarima
+prophet
+lstm
+gru
+rnn
+cnn
+transformer
+attention mechanism
+self-attention
+multi-head attention
+bert
+roberta
+deberta
+t5
+gpt-2
+gpt-3
+gpt-4
+llama
+mistral
+gemini
+claude
+stable diffusion
+midjourney
+dall-e
+gan
+generative adversarial networks
+vae
+variational autoencoders
+diffusion models
+flow-based models
+ner
+named entity recognition
+pos tagging
+part of speech
+dependency parsing
+sentiment analysis
+text classification
+topic modeling
+lda
+word2vec
+glove
+fasttext
+bert embeddings
+sentence transformers
+cross-encoders
+bi-encoders
+dense retrieval
+sparse retrieval
+bm25
+tf-idf
+information retrieval
+search engines
+lucene
+solr
+opensearch
+recommendation systems
+collaborative filtering
+content-based filtering
+matrix factorization
+svd
+als
+deep & cross network
+two-tower models
+knowledge graphs
+rdf
+owl
+sparql
+graph neural networks
+gnn
+gcn
+gat
+graph embedding
+node2vec
+graphx
+graphframes
+network analysis
+centrality
+community detection
+graph algorithms
+dijkstra
+a*
+bellman-ford
+floyd-warshall
+prim
+kruskal
+topological sort
+tarjan
+union-find
+segment tree
+fenwick tree
+trie
+suffix tree
+suffix automaton
+spatial indexing
+k-d tree
+r-tree
+geohash
+h3
+s2
+gis
+qgis
+arcgis
+gdal
+geopandas
+shapely
+postgis
+spatial sql
+remote sensing
+satellite imagery
+lidar
+photogrammetry
+bioinformatics
+genomics
+proteomics
+blast
+samtools
+bcf
+vcf
+fasta
+fastq
+pdb
+mmcif
+cheminformatics
+rdkit
+smiles
+inchi
+molecular dynamics
+gromacs
+namd
+amber
+docking
+autodock
+vina
+finite element analysis
+fea
+ansys
+abaqus
+cfd
+computational fluid dynamics
+openfoam
+cad
+solidworks
+autocad
+catia
+fusion 360
+cam
+cnc
+g-code
+3d printing
+rapid prototyping
+digital twin
+industry 4.0
+lean manufacturing
+six sigma
+kaizen
+5s
+scrum master
+product owner
+kanban
+scaled agile
+safe
+itil
+togaf
+prince2
+pmp
+capm
+csm
+psm
+cspo
+pspo
+aws certified
+azure certified
+gcp certified
+ckad
+cka
+cks
+cissp
+cism
+ceh
+security+
+network+
+a+
+linux+
+rhcsa
+rhce
+ccna
+ccnp
+ccie
+juniper
+palo alto
+fortinet
+checkpoint
+wireshark
+tcpdump
+nmap
+metasploit
+burp suite
+owasp zap
+nessus
+qualys
+kali linux
+forensics
+autopsy
+volatility
+ghidra
+ida pro
+binary ninja
+radare2
+reverse engineering
+malware analysis
+sandbox
+cuckoo
+yara
+snort
+suricata
+zeek
+osquery
+wazuh
+siem
+soc
+threat intelligence
+misp
+taxii
+stix
+soar
+phantom
+demisto
+cortex xsoar
+edr
+crowdstrike
+sentinelone
+carbon black
+microsoft defender
+active directory security
+kerberos
+bloodhound
+mimikatz
+powersploit
+empire
+cobalt strike
+c2
+command and control
+red teaming
+blue teaming
+purple teaming
+incident handling
+tabletop exercises
+disaster recovery planning
+business impact analysis
+risk management framework
+rmf
+nist 800-53
+nist csf
+iso 27001
+cobiT
+it governance
+audit
+compliance
+vendor risk management
+third party risk
+privacy
+ccpa
+coppa
+ferpa
+sox
+glba
+fisma
+fedramp
+hipaa compliance
+data governance
+data quality
+data lineage
+data catalog
+collibra
+alation
+apache atlas
+great expectations
+dbt tests
+data profiling
+master data management
+mdm
+customer 360
+data mesh
+data fabric
+data lakehouse
+medallion architecture
+bronze silver gold
+star schema
+snowflake schema
+dimensional modeling
+kimball
+inmon
+data vault
+slowly changing dimensions
+scd
+change data capture
+cdc
+debezium
+fivetran
+airbyte
+stitch
+meltano
+data integration
+data migration
+database migration
+flyway
+liquibase
+alembic
+dbmate
+database version control
+database testing
+pgtap
+t-sql
+pl/sql
+stored procedures
+triggers
+views
+materialized views
+indexes
+b-tree
+hash index
+gin
+gist
+brin
+partitioning
+range partitioning
+list partitioning
+hash partitioning
+composite partitioning
+connection pooling
+pgbouncer
+hikari
+c3p0
+dbcp
+distributed transactions
+2pc
+two phase commit
+saga pattern
+eventual consistency
+cap theorem
+pacelc theorem
+acid
+base
+cqrs
+event sourcing
+domain driven design
+ddd
+clean architecture
+hexagonal architecture
+onion architecture
+mvc
+mvvm
+mvi
+flux
+redux pattern
+observer pattern
+factory pattern
+singleton pattern
+strategy pattern
+adapter pattern
+decorator pattern
+facade pattern
+proxy pattern
+builder pattern
+prototype pattern
+chain of responsibility
+command pattern
+iterator pattern
+mediator pattern
+memento pattern
+state pattern
+template method
+visitor pattern
+solid principles
+dry
+kiss
+yagni
+code refactoring
+technical debt
+design patterns
+architectural patterns
+enterprise integration patterns
+eip
+message broker
+activemq
+rabbitmq
+rabbitmq cluster
+celery
+sidekiq
+bullmq
+task queue
+job queue
+cron
+celery beat
+apscheduler
+event driven architecture
+eda
+eda patterns
+pub sub
+publisher subscriber
+point to point
+competing consumers
+dead letter queue
+dlq
+poison pill
+circuit breaker
+retry pattern
+bulkhead pattern
+rate limiting
+token bucket
+leaky bucket
+sliding window
+api gateway
+kong
+tyk
+apigee
+aws api gateway
+envoy
+traefik gateway
+bff
+backend for frontend
+micro frontend
+single spa
+module federation
+web components
+shadow dom
+custom elements
+html templates
+virtual dom
+reconciliation
+react fiber
+server components
+rsc
+streaming ssr
+static site generation
+ssg
+incremental static regeneration
+isr
+client side rendering
+csr
+progressive hydration
+resumability
+qwik
+astro
+solidjs
+solidstart
+alpine.js
+htmx
+unpoly
+hotwire
+turbo
+stimulus
+phoenix liveview
+laravel livewire
+blazor
+razor
+web forms
+jsp
+jsf
+struts
+velocity
+freemarker
+thymeleaf
+twig
+blade
+jinja
+jinja2
+mako
+mustache
+handlebars
+ejs
+pug
+jade
+liquid
+nunjucks
+haml
+slim
+erb
+xaml
+wpf
+uwp
+winui
+qt
+qml
+wxwidgets
+gtk
+tk
+tkinter
+swing
+awt
+javafx
+compose
+jetpack compose
+compose multiplatform
+swiftui
+uikit
+appkit
+electron
+tauri
+wails
+flutter desktop
+react native windows
+react native macos
+pwa desktop
+webrtc
+sip
+rtp
+rtsp
+hls
+dash
+video streaming
+audio streaming
+ffmpeg
+gstreamer
+vlc
+webaudio
+webgl
+three.js
+babylon.js
+cesium
+pixi.js
+phaser
+canvas api
+svg
+d3.js
+chart.js
+echarts
+highcharts
+c3.js
+vega
+vega-lite
+plotly.js
+vis.js
+cytoscape
+sigma.js
+deck.gl
+kepler.gl
+maplibre
+mapbox
+leaflet
+openlayers
+google maps api
+mapbox gl js
+tangram
+webxr
+ar.js
+a-frame
+unity
+unreal engine
+godot
+cryengine
+monogame
+libgdx
+cocos2d
+gamemaker
+shader
+hlsl
+glsl
+metal
+vulkan
+directx
+opengl
+physx
+bullet physics
+box2d
+spine
+live2d
+blender
+maya
+3ds max
+zbrush
+substance painter
+houdini
+cinema 4d
+marvelous designer
+photoshop
+illustrator
+indesign
+premiere pro
+after effects
+da vinci resolve
+final cut pro
+audition
+ableton live
+fl studio
+logic pro
+pro tools
+reaper
+blender animation
+rigging
+motion capture
+mocap
+vfx
+compositing
+nuke
+fusion
+rotoscoping
+matchmoving
+color grading
+sound design
+foley
+music production
+mixing
+mastering
+figma
+sketch
+adobe xd
+invision
+framer
+principle
+proto.io
+axure
+balsamiq
+marvel
+zeplin
+abstract
+zeroheight
+storybook
+design system
+ui design
+ux design
+user research
+usability testing
+wireframing
+prototyping
+user persona
+journey mapping
+information architecture
+heuristic evaluation
+accessibility testing
+card sorting
+tree testing
+a/b testing
+multivariate testing
+google analytics
+google tag manager
+mixpanel
+amplitude
+segment
+rudderstack
+snowplow
+posthog
+hotjar
+crazy egg
+fullstory
+logrocket
+smartlook
+optimizely
+vwo
+launchdarkly
+split.io
+unleash
+flagsmith
+flipt
+growth hacking
+seo
+sem
+cro
+conversion rate optimization
+content marketing
+email marketing
+mailchimp
+sendgrid
+klaviyo
+activecampaign
+hubspot
+salesforce
+marketo
+pardot
+crm
+erp
+sap
+oracle erp
+netsuite
+workday
+servicenow
+zendesk
+freshdesk
+intercom
+drift
+chatbots
+dialogflow
+rasa
+botpress
+voiceflow
+amazon lex
+azure bot service
+ivr
+telephony
+twilio
+vonage
+agora
+sinch
+plivo
+sip trunking
+pbx
+asterisk
+freeswitch
+kamailio
+opensips
+webrtc media server
+kurento
+janus
+mediasoup
+jitsi
+livekit
+pion
+webrtc native
+voip
+video conferencing
+screen sharing
+call recording
+speech to text
+stt
+text to speech
+tts
+whisper
+deepgram
+assemblyai
+elevenlabs
+amazon polly
+google cloud tts
+azure cognitive services
+ocr
+tesseract
+easyocr
+paddleocr
+google cloud vision
+amazon rekognition
+azure computer vision
+facial recognition
+face detection
+object detection
+yolo
+faster r-cnn
+ssd
+retinanet
+image segmentation
+mask r-cnn
+u-net
+semantic segmentation
+instance segmentation
+panoptic segmentation
+pose estimation
+openpose
+mediapipe
+mmpose
+optical flow
+visual slam
+orb-slam
+cartographer
+sensor fusion
+extended kalman filter
+point cloud
+open3d
+pcl library
+depth estimation
+monocular depth
+stereo vision
+photogrammetry 3d
+gaussian splatting
+nerf
+neural radiance fields
+3d reconstruction
+slam
+autonomous driving
+autoware
+apollo
+carla
+airsim
+robot operating system
+ros2
+gazebo
+rviz
+moveit
+nav2
+behavior trees
+control systems
+pid controller
+lqr
+mpc
+model predictive control
+trajectory planning
+path planning
+kinematics
+inverse kinematics
+dynamics
+actuators
+servos
+bldc motors
+foc
+field oriented control
+canopen
+ethercat
+profinet
+modbus rtu
+modbus tcp
+embedded linux
+yocto
+buildroot
+u-boot
+device tree
+linux kernel
+kernel modules
+device drivers
+character devices
+block devices
+v4l2
+i2c
+spi
+uart
+gpio
+pwm
+adc
+dac
+dma
+interrupt handling
+ipc
+shared memory
+semaphores
+message queues
+pipes
+unix sockets
+posix threads
+pthreads
+rt-preempt
+xenomai
+bare metal
+arm cortex-m
+arm cortex-a
+arm cortex-r
+stm32
+nordic nrf
+esp-idf
+pic
+avr
+dsp
+digital signal processing
+fft
+fir filter
+iir filter
+wavelet
+fpga
+verilog
+systemverilog
+vhdl
+hls
+xilinx
+vivado
+intel fpga
+quartus
+lattice
+icestorm
+asic
+vlsi
+rtl design
+synthesis
+sta
+static timing analysis
+dft
+design for test
+uvm
+universal verification methodology
+formal verification
+spice
+ltspice
+cadence
+synopsys
+mentor graphics
+kicad
+altium
+eagle
+orcad
+pcb design
+schematic capture
+pcb layout
+signal integrity
+power integrity
+emc
+emi
+thermal analysis
+prototyping pcb
+surface mount
+smd
+soldering
+multimeter
+oscilloscope
+logic analyzer
+spectrum analyzer
+signal generator
+power supply
+boundary scan
+jtag
+swd
+test equipment
+labview
+matlab simulink
+scilab
+octave
+r packages
+bioconductor
+cran
+pypi
+conda
+bioconda
+pipenv
+poetry
+pdm
+hatch
+flit
+setuptools
+wheel
+twine
+pytest-cov
+tox
+nox
+pre-commit
+blackd
+autopep8
+isort
+bandit
+safety
+pip-audit
+npm audit
+yarn audit
+cargo audit
+gosec
+checkov
+tfsec
+terrascan
+kics
+grype
+syft
+cosign
+trivy operator
+falco
+opa
+gatekeeper
+kyverno
+cilium
+calico
+flannel
+weave
+multus
+metallb
+ingress-nginx
+traefik ingress
+cert manager
+external-dns
+cluster autoscaler
+karpenter
+vpa
+hpa
+keda
+velero
+thanos operator
+prometheus stack
+eck
+elastic cloud kubernetes
+strimzi
+kafka operator
+postgres operator
+zalando
+cloudnative-pg
+kuberay
+kubeflow
+seldon
+kserve
+triton inference server
+torchserve
+tf serving
+vllm
+tgi
+text generation inference
+ollama
+localai
+llama.cpp
+exllamav2
+tensorrt
+tensorrt-llm
+onnx
+onnx runtime
+openvino
+tvm
+mlir
+iree
+jax
+flax
+trax
+optax
+chex
+haiku
+equinox
+diffrax
+lineax
+blackjax
+numpyro
+pyro
+stan
+pymc
+mcmc
+variational inference
+probabilistic programming
+reinforcement learning environments
+gymnasium
+gym
+pettingzoo
+minigrid
+procgen
+atari
+mujoco
+pybullet
+isaac sim
+omniverse
+unity ml-agents
+ray
+rllib
+tune
+serve
+ray train
+ray data
+dask
+distributed computing
+mpi4py
+deepspeed
+megatron-lm
+fsdp
+fully sharded data parallel
+zero redundancy optimizer
+accelerate
+huggingface accelerate
+peft
+lora
+qlora
+adalora
+prompt tuning
+prefix tuning
+ia3
+quantization
+bitsandbytes
+gptq
+awq
+gguf
+fp8
+int8
+int4
+pruning
+distillation
+knowledge distillation
+model compression
+edge ai
+coral tpu
+intel neural compute stick
+qualcomm snapdragon neural processing
+npu
+apple neural engine
+ane
+coreml
+tflite
+tensorflow lite
+tensorflow lite micro
+microtvm
+tinygo
+rust embedded
+embedded rust
+cortex-m-rt
+embedded-hal
+no_std
+bare-metal rust
+embedded graphics
+defmt
+probe-rs
+openocd
+gdb
+lldb
+valgrind
+massif
+kcachegrind
+perf
+flamegraph
+ebpf
+bcc
+bpftrace
+systemtap
+strace
+ltrace
+ftrace
+dtrace
+kernel tracing
+core dump
+post-mortem debugging
+crash dump
+minidump
+sentry native
+bugsnag
+appdynamics
+dynatrace
+solarwinds
+logicmonitor
+zabbix
+nagios
+icinga
+sensu
+checkmk
+monit
+supervisor
+systemd
+init.d
+launchd
+runit
+openrc
+sysvinit
+busybox
+alpine linux
+debian
+ubuntu
+redhat
+rhel
+centos
+rocky linux
+almalinux
+fedora
+arch linux
+manjaro
+opensuse
+sles
+gentoo
+nixos
+void linux
+freebsd
+openbsd
+netbsd
+dragonflybsd
+solaris
+illumos
+smartos
+omnios
+aix
+hp-ux
+tru64
+irix
+minix
+freedos
+ms-dos
+windows server
+windows 10
+windows 11
+macos
+ios development
+android development
+xcode
+android studio
+gradle build
+cocoapods
+carthage
+swift package manager
+spm
+fastlane
+testflight
+google play console
+app store connect
+firebase app distribution
+codemagic
+bitrise
+appcenter
+browserstack
+saucelabs
+lambdatest
+device farm
+appium
+espresso
+xcuitest
+detox
+maestro
+calabash
+monkeyrunner
+ui automator
+app crawler
+loadrunner
+neoload
+gatling enterprise
+blazemeter
+flood.io
+locust.io
+k6 cloud
+artillery io
+apache ab
+wrk
+wrk2
+hey
+siege
+tsung
+vegeta
+autocannon
+postman runner
+newman
+soapui
+readyapi
+rest-assured
+karate framework
+pact
+contract testing
+consumer driven contracts
+spring cloud contract
+wiremock
+mountebank
+hoverfly
+prism
+mockoon
+json-server
+miragejs
+faker
+faker.js
+factory bot
+fixtures
+testcontainers
+localstack
+moto
+minio
+embedded mongodb
+embedded redis
+h2 database
+hsqldb
+derby
+sqlite in-memory
+in-memory database
+mocking
+stubbing
+spying
+faking
+dummy objects
+mock objects
+test doubles
+unit test
+integration test
+system test
+acceptance test
+smoke test
+sanity test
+regression test
+exploratory testing
+mutation testing
+pitest
+mutmut
+stryker
+property based testing
+hypothesis
+quickcheck
+fast-check
+fuzz testing
+afl
+american fuzzy lop
+libfuzzer
+honggfuzz
+clusterfuzz
+oss-fuzz
+static code analysis
+linter
+type checker
+formality
+abstract interpretation
+symbolic execution
+concolic execution
+angr
+klee
+infer
+facebook infer
+clang static analyzer
+cppcheck
+flawfinder
+rats
+splint
+pmd
+checkstyle
+spotbugs
+findbugs
+sonarlint
+semgrep
+codeql
+coverity
+fortify
+veracode
+checkmarx
+blackduck
+mend
+whitesource
+fossology
+license compliance
+sbom
+software bill of materials
+spdx
+cyclonedx
+syft cli
+grype cli
+trivy cli
+dependency-track
+osv-scanner
+cve
+nvd
+cwe
+capec
+att&ck
+nist
+cis benchmarks
+benchmarks
+hardening
+bastion host
+jump host
+vpn
+wireguard
+openvpn
+ipsec
+strongswan
+tailscale
+zerotier
+nebula
+perimeter81
+cloudflare access
+zscaler
+palo alto prisma
+cisco anyconnect
+forticlient
+checkpoint capsule
+ssh tunnel
+port forwarding
+reverse proxy tunnel
+ngrok
+localtunnel
+frp
+cloudflared
+rathole
+bore
+pagekite
+webhook
+webhook receiver
+event bridge
+aws eventbridge
+azure event grid
+google cloud pub/sub
+kafka connect
+debezium connect
+schema registry
+confluent schema registry
+avro
+protobuf schema
+json schema
+thrift
+cap'n proto
+flatbuffers
+messagepack
+cbor
+bson
+asn.1
+ber
+der
+pem
+x.509
+pkcs
+pkcs12
+pfx
+keystore
+truststore
+crypto libraries
+openssl
+libressl
+boringssl
+bouncycastle
+libsodium
+cryptography python
+nacl
+tweetnacl
+mbedtls
+wolfssl
+botan
+cryptopp
+gnutls
+kerberos ticket
+spnego
+kerberos authentication
+oauth2
+oidc
+openid connect
+pkce
+authorization code grant
+client credentials grant
+refresh token
+access token
+id token
+bearer token
+mac token
+dpop
+mtls
+mutual tls
+client certificates
+cert pinning
+hsts
+csp
+content security policy
+x-frame-options
+x-content-type-options
+referrer-policy
+permissions-policy
+subresource integrity
+sri
+coop
+coep
+corp
+secure cookies
+samesite
+httponly
+domain cookies
+session management
+jwt authentication
+paseto
+branca
+macaroons
+biscuit tokens
+webauthn
+fido2
+passkeys
+biometric auth
+face id
+touch id
+windows hello
+mfa
+2fa
+totp
+hotp
+sms 2fa
+email 2fa
+authenticator app
+yubikey
+u2f
+smart cards
+hardware token
+hsm
+hardware security module
+aws kms
+azure key vault
+google cloud kms
+hashicorp boundary
+hashicorp consul
+hashicorp nomad
+hashicorp vagrant
+hashicorp packer
+hashicorp waypoint
+hashicorp terraform
+opentofu
+terragrunt
+pulumi
+cdktf
+aws cdk
+cdk8s
+bicep
+arm templates
+cloudformation templates
+serverless framework
+sst
+sam
+aws sam
+chalice
+zappa
+architect
+up
+apex
+openfaas
+knative
+fission
+kubeless
+nuclio
+dapr
+distributed application runtime
+temporal
+temporal.io
+cadence
+uber cadence
+conductor
+netflix conductor
+camunda
+zeebe
+airflow dags
+prefect
+dagster
+mage
+luigi
+argo workflows
+argo cd
+argo rollouts
+argo events
+tekton
+tektoncd
+spinnaker
+jenkins x
+flagger
+canary deployment
+blue green deployment
+rolling update
+recreate deployment
+shadow deployment
+dark launching
+feature flags
+ab testing deployment
+chaos engineering
+service mesh
+linkerd
+istio service mesh
+consul connect
+kuma
+traefik mesh
+cilium service mesh
+sidecar proxy
+ambient mesh
+ebpf data plane
+envoy proxy
+nginx ingress controller
+apisix
+traefik ingress controller
+contour
+emissary ingress
+haproxy
+keepalived
+vrrp
+bgp
+calico bgp
+metal lb
+kube-router
+cilium bgp
+core-dns
+bind9
+unbound
+powerdns
+dnsmasq
+pi-hole
+adguard home
+dhcp
+dhcpd
+kea
+tftp
+pxe
+ipxe
+fog project
+cobbler
+kickstart
+preseed
+autoinstall
+cloud-init
+ignition
+combustion
+packer builds
+golden image
+ami
+vmdk
+vhd
+qcow2
+raw disk image
+iso image
+container image
+dockerfile
+containerfile
+kaniko
+buildah
+podman
+skopeo
+buildkit
+nerdctl
+containerd
+cri-o
+docker engine
+docker compose
+podman compose
+swarm
+docker swarm
+nomad cluster
+mesos
+marathon
+aurora
+kubernetes cluster
+k8s cluster
+k3s
+k0s
+microk8s
+minikube
+kind
+kubeadm
+kubespray
+rke
+rke2
+k3os
+talos linux
+flatcar linux
+coreos
+bottlerocket
+fedora coreos
+photon os
+smartos zones
+illumos zones
+bsd jails
+chroot
+lxc
+lxd
+incus
+openvz
+systemd-nspawn
+cgroups
+cgroups v2
+namespaces
+pid namespace
+net namespace
+ipc namespace
+uts namespace
+mount namespace
+user namespace
+cgroup namespace
+time namespace
+seccomp
+apparmor
+selinux
+smack
+tomoyo
+landlock
+pledge
+unveil
+capsicum
+trustzone
+sgx
+intel sgx
+amd sev
+arm cca
+confidential computing
+enclave
+gramine
+occlum
+edgeless systems
+mystikos
+nitro enclaves
+kata containers
+firecracker
+gvisor
+runsc
+cloud-hypervisor
+qemu
+kvm
+xen
+hyper-v
+vmware esxi
+vsphere
+vcenter
+workstation
+fusion
+virtualbox
+bhyve
+proxmox
+pve
+proxmox backup server
+pbs
+xcp-ng
+xen orchestra
+oVirt
+openstack
+cloudstack
+opennebula
+harvester
+longhorn
+rook
+ceph
+glusterfs
+moosefs
+lizardfs
+drbd
+zfs
+openzfs
+btrfs
+xfs
+ext4
+f2fs
+nilfs2
+bcachefs
+lvm
+mdadm
+software raid
+hardware raid
+san
+nas
+iscsi
+nfs
+smb
+cifs
+samba
+s3
+minio s3
+ceph radosgw
+openio
+seaweedfs
+juicefs
+chubao
+alluxio
+lustre
+gpfs
+spectrum scale
+beegfs
+panasas
+wka
+hdfs namenode
+hdfs datanode
+yarn resourcemanager
+yarn nodemanager
+mapreduce jobhistory
+zookeeper
+apache zookeeper
+curator
+raft consensus
+etcd
+bbolt
+badgerdb
+rocksdb
+leveldb
+lmdb
+berkeleydb
+wiredtiger
+mongo wiredtiger
+innodb
+myisam
+aria
+tokudb
+rocksdb engine
+myrocks
+polar db
+tidb
+tikv
+oceanbase
+cockroach
+yugabytedb
+citus
+pg_partman
+pg_cron
+timescale
+postgis extension
+pgvector
+pg_trgm
+uuid-ossp
+hstore
+ltree
+fuzzystrmatch
+plpython
+plv8
+pltcl
+plperl
+dblink
+postgres_fdw
+file_fdw
+cstore_fdw
+mongo_fdw
+foreign data wrappers
+fdw
+database extensions
+mariadb columnstore
+clickhouse merge tree
+clickhouse replicating
+apache doris
+apache pinot
+starrocks
+druid
+apache druid
+kylin
+apache kylin
+cortex tsdb
+thanos tsdb
+prometheus tsdb
+m3db
+victoria metrics
+influxdb
+influxql
+flux language
+telegraf
+graphite
+whisper db
+opentsdb
+kairosdb
+timeseries database
+vector database
+vector search
+similarity search
+cosine similarity
+euclidean distance
+dot product
+manhattan distance
+ann
+approximate nearest neighbors
+hnsw
+hierarchical navigable small world
+ivf
+inverted file index
+pq
+product quantization
+lsh
+locality sensitive hashing
+faiss index
+annoy
+scann
+milvus vector
+qdrant vector
+weaviate vector
+pinecone vector
+chroma vector
+pgvector index
+elasticsearch vector
+opensearch vector
+vespa
+marqo
+vald
+txtai
+deep lake
+active loop
+lantern
+pg_embedding
+turbopuffer
+lancedb
+lance format
+arrow format
+feather format
+parquet format
+orc format
+avro format
+protocol buffers
+thrift format
+flatbuffers format
+capn proto format
+messagepack format
+cbor format
+ion format
+smile format
+ubjson format
+json lines
+jsonl
+ndjson
+csv
+tsv
+psv
+fixed width format
+excel format
+xlsx
+xls
+ods
+hdf5
+h5
+netcdf
+zarr
+dask array
+xarray
+geoparquet
+shapefile
+geojson
+topojson
+kml
+gml
+wkt
+wkb
+raster
+geotiff
+cog
+cloud optimized geotiff
+las
+laz
+point cloud format
+e57
+ply
+obj
+stl
+fbx
+gltf
+glb
+collada
+dae
+usd
+usdz
+alembic abc
+bvh
+vrm
+splat
+ply point cloud
+step
+stp
+iges
+igs
+brep
+dxf
+dwg
+gerber
+excellon
+ipc-2581
+odb++
+edif
+vcd
+value change dump
+gtkwave
+waveform
+bitstream
+jedec
+svf
+xsvf
+bin format
+hex format
+srec
+motorola s-record
+intel hex
+elf
+executable and linkable format
+dwarf
+debug symbols
+pdb symbols
+macho
+mach-o
+pe
+portable executable
+coff
+a.out
+so
+shared object
+dll
+dylib
+static library
+archive
+ar format
+tar
+cpio
+pax
+zip
+7z
+rar
+gzip
+bzip2
+xz
+zstd
+zstandard
+lz4
+snappy
+brotli
+deflate
+inflate
+lzo
+compress
+uncompress
+base64
+base32
+base58
+base62
+base85
+hex encoding
+url encoding
+percent encoding
+punycode
+unicode
+utf-8
+utf-16
+utf-32
+ascii
+iso-8859-1
+latin1
+windows-1252
+shift-jis
+euc-jp
+gb2312
+gbk
+gb18030
+big5
+euc-kr
+koi8-r
+macroman
+ebcdic
+code page
+mime
+multipurpose internet mail extensions
+content-type
+multipart/form-data
+application/json
+application/xml
+text/html
+text/plain
+text/csv
+application/pdf
+application/octet-stream
+image/png
+image/jpeg
+image/webp
+image/svg+xml
+image/gif
+audio/mpeg
+audio/wav
+audio/ogg
+video/mp4
+video/webm
+video/ogg
+application/x-www-form-urlencoded
+application/javascript
+application/wasm
+application/graphql
+application/zip
+application/x-tar
+application/gzip
+http/1.0
+http/1.1
+http/2
+http/3
+quic
+spdy
+websocket protocol
+webtransport
+webrtc data channel
+sse protocol
+server sent events
+long polling
+polling
+comet
+bosh
+xmpp
+jabber
+matrix protocol
+irc
+ircv3
+smtp
+pop3
+imap
+esmtp
+starttls
+dkim
+spf
+dmarc
+bimi
+mta
+postfix
+sendmail
+exim
+qmail
+haraka
+mailgun
+sparkpost
+amazon ses
+mailersend
+postmark
+courier
+dovecot
+cyrus
+fetchmail
+procmail
+sieve
+mua
+mutt
+neomutt
+alpine mail
+thunderbird
+apple mail
+outlook
+webmail
+roundcube
+squirrelmail
+rainloop
+snappymail
+horde
+nextcloud mail
+mailcow
+mail-in-a-box
+iredmail
+modoboa
+stalwart
+stalwart mail server
+ntp
+chrony
+systemd-timesyncd
+ptp
+precision time protocol
+ieee 1588
+gps ntp
+atomic clock
+time sync
+syslog
+rsyslog
+syslog-ng
+journald
+systemd-journald
+logrotate
+logstash
+fluentd
+fluent-bit
+vector log
+filebeat
+metricbeat
+packetbeat
+heartbeat
+auditbeat
+osquery agent
+auditd
+auditctl
+selinux tools
+semanage
+restorecon
+audit2allow
+audit2why
+chcon
+setenforce
+getenforce
+sestatus
+iptables
+ip6tables
+arptables
+ebtables
+nftables
+firewalld
+ufw
+shorewall
+csf
+configserver
+pfsense
+opnsense
+vyos
+openwrt
+dd-wrt
+tomato firmware
+mikrotik
+routeros
+cisco ios
+cisco nx-os
+juniper junos
+arista eos
+cumulus linux
+sonic os
+dellos
+extreme xos
+huawei vrp
+bgp routing
+ospf
+rip
+isis
+mpls
+vpls
+evpn
+vxlan
+geneve
+gre
+ipip
+wireguard vpn
+openvpn server
+ipsec vpn
+strongswan ikev2
+l2tp
+pptp
+sstp
+softether
+shadowsocks
+v2ray
+xray
+trojan
+clash
+sing-box
+tor
+onion routing
+i2p
+freenet
+gnunet
+zeronet
+lokinet
+yggdrasil
+cjdns
+mesh networking
+batman-adv
+babel routing
+olsr
+olsrv2
+bmx6
+bmx7
+adhoc network
+wifi mesh
+802.11s
+lora mesh
+zigbee mesh
+z-wave
+thread protocol
+matter protocol
+home assistant
+openhab
+domoticz
+iobroker
+esphome
+tasmota
+wled
+node-red
+zigbee2mqtt
+zwavejs
+matter.js
+apple homekit
+google home
+amazon alexa
+smartthings
+tuya
+tuya-convert
+bluetooth le
+beacon
+ibeacon
+eddystone
+altbeacon
+nfc
+rfid
+mifare
+desfire
+proxmark3
+flipper zero
+hackrf
+rtl-sdr
+bladerf
+usrp
+lime sdr
+gnuradio
+gqrx
+sdr#
+sdr++
+dump1090
+ads-b
+ais marine
+aprs
+packet radio
+ax.25
+amateur radio
+ham radio
+sstv
+morse code
+cw
+rtty
+psk31
+ft8
+wsjt-x
+direwolf
+soundmodem
+chirp
+yaesu
+kenwood
+icom
+baofeng
+anytone
+dmr
+d-star
+fusion ysf
+p25
+tetra
+m17
+codec2
+freedv
+opus codec
+speex
+vorbis
+flac
+alac
+mp3
+aac
+ac3
+eac3
+dts
+truehd
+pcm
+wavpack
+monkey's audio
+musepack
+amr
+g.711
+g.722
+g.729
+ilbc
+silk
+gsm
+av1
+h.264
+avc
+h.265
+hevc
+vvc
+h.266
+vp8
+vp9
+theora
+prores
+dnxhd
+dnxhr
+cineform
+raw video
+braw
+prores raw
+arriraw
+redcode
+yuv
+rgb
+cmyk
+hsv
+hsl
+lab color
+dci-p3
+rec.709
+rec.2020
+rec.2100
+srgb
+adobe rgb
+display p3
+hdr10
+hdr10+
+dolby vision
+hlg
+aces
+ocio
+open color io
+openimageio
+oiio
+openexr
+exr
+hdr
+tone mapping
+lut
+3d lut
+cube lut
+color grading
+waveform monitor
+vectorscope
+histogram
+false color
+zebra
+focus peaking
+anamorphic
+spherical lens
+focal length
+depth of field
+bokeh
+aperture
+shutter speed
+shutter angle
+iso
+sensor size
+full frame
+super 35
+micro four thirds
+medium format
+global shutter
+rolling shutter
+anti-aliasing
+moire
+bayer pattern
+debayering
+demosaicing
+raw photo
+dng
+cr2
+cr3
+nef
+arw
+orf
+rw2
+pef
+raf
+x3f
+lightroom
+capture one
+darktable
+rawtherapee
+digikam
+gimp
+krita
+inkscape
+affinity photo
+affinity designer
+affinity publisher
+coreldraw
+pixelmator
+photomator
+paint.net
+aseprite
+libresprite
+pixel art
+vector art
+raster art
+typography
+kerning
+tracking
+leading
+ligatures
+variable fonts
+opentype
+truetype
+woff
+woff2
+embedded opentype
+eot
+svg fonts
+fontforge
+glyphs
+robofont
+glyphs app
+fontlab
+typesetting
+latex
+pdflatex
+xelatex
+lualatex
+bibtex
+biber
+overleaf
+typst
+pandoc
+groff
+troff
+man pages
+asciidoc
+asciidoctor
+restructuredtext
+sphinx
+mkdocs
+docusaurus
+gitbook
+mdbook
+vuepress
+vitepress
+starlight
+astro docs
+hugo
+jekyll
+eleventy
+11ty
+middleman
+nanoc
+wintersmith
+pelican
+nikola
+zola
+cobalt
+hexo
+cactus
+sculpin
+statamic
+craft cms
+ghost
+strapi
+sanity
+contentful
+prismic
+storyblok
+payload cms
+directus
+keystonejs
+sanity.io
+hygraph
+graphcms
+buttercms
+cosmic js
+agility cms
+kontent.ai
+flotiq
+encodian
+tinacms
+decap cms
+netlify cms
+forestry
+frontaid
+sveltia
+static cms
+headless cms
+jamstack
+decoupled cms
+monolithic cms
+wordpress rest api
+wp-graphql
+woocommerce
+shopify
+liquid template
+shopify apps
+bigcommerce
+magento
+adobe commerce
+prestashop
+opencart
+medusa.js
+saleor
+spree commerce
+solidus
+sylius
+oscommerce
+nopcommerce
+virtuemart
+snipcart
+stripe
+stripe api
+paypal
+paypal sdk
+braintree
+adyen
+square
+square api
+authorize.net
+checkout.com
+razorpay
+mollie
+worldpay
+klarna
+afterpay
+affirm
+sezzle
+apple pay
+google pay
+alipay
+wechat pay
+upi
+plaid
+yodlee
+tink
+truelayer
+mx
+finicity
+open banking
+psd2
+ach transfer
+sepa
+wire transfer
+swift transfer
+iban
+bic
+routing number
+card processing
+emv
+pci compliance
+tokenization
+chargeback
+fraud detection
+sift science
+kount
+radar stripe
+signifyd
+forter
+riskified
+identity verification
+idology
+jumio
+onfido
+veriff
+persona
+socure
+trulioo
+lexisnexis
+experian
+equifax
+transunion
+credit scoring
+fico
+vantage score
+loan origination
+underwriting
+core banking
+mambu
+thought machine
+temenos
+finacle
+fis
+fiserv
+jack henry
+q2
+ncr
+fintech
+insurtech
+proptech
+healthtech
+edtech
+agtech
+cleantech
+hrtech
+legaltech
+govtech
+regtech
+martech
+adtech
+dsp
+ssp
+ad exchange
+ad server
+rtb
+real-time bidding
+openrtb
+vast
+vpaid
+omsdk
+iab
+header bidding
+prebid
+prebid.js
+tam
+ebda
+google ad manager
+gam
+appnexus
+xandr
+rubicon
+magnite
+pubmatic
+openx
+index exchange
+triplelift
+criteo
+the trade desk
+ttd
+dv360
+display & video 360
+sa360
+search ads 360
+meta ads
+facebook ads api
+google ads api
+tiktok ads api
+linkedin ads api
+twitter ads api
+x ads api
+snapchat ads api
+pinterest ads api
+amazon advertising
+sponsored products
+dsp amazon
+attribution
+mta
+multi-touch attribution
+mmm
+marketing mix modeling
+last touch
+first touch
+linear attribution
+time decay
+u-shaped attribution
+w-shaped attribution
+data-driven attribution
+skadnetwork
+privacy sandbox
+floc
+topics api
+protected audience api
+fledge
+attribution reporting api
+private aggregation api
+shared storage
+first party data
+cdp
+customer data platform
+segment cdp
+mparticle
+tealium
+treasure data
+amperity
+actioniq
+simon data
+lytics
+blueshift
+census
+hightouch
+reverse etl
+polymorphic
+data warehouse cdp
+snowflake cdp
+bigquery cdp
+databricks cdp
+redshift cdp
+looker studio
+tableau desktop
+power bi desktop
+qlik sense
+qlikview
+thoughtspot
+sisense
+domo
+microstrategy
+mode analytics
+metabase
+superset
+apache superset
+redash
+preset
+lightdash
+evidence
+rill
+quicksight
+aws quicksight
+google looker
+gooddata
+holistics
+trevor.io
+steep
+cube.js
+semantic layer
+dbt semantic layer
+metricflow
+rill developer
+malloy
+cube semantic layer
+transform data
+benn stancil
+olap
+rolap
+molap
+holap
+mondrian
+kylin olap
+clickhouse olap
+druid olap
+pinot olap
+duckdb
+duckdb-wasm
+sqlite-wasm
+chdb
+polars
+arrow rust
+datafusion
+apache datafusion
+ballista
+cudf
+rapids
+rapids ai
+cuuml
+cugraph
+cuspatial
+cuxfilter
+modin
+vaex
+koalas
+pyspark
+spark streaming
+structured streaming
+kafka streams
+ksqldb
+flink sql
+apache flink
+apache beam
+google cloud dataflow
+storm
+apache storm
+heron
+samza
+apache samza
+gearpump
+spark mllib
+spark graphx
+hadoop yarn
+hadoop mapreduce
+hadoop hdfs
+hive metastore
+hcat
+hcatalog
+apache oozie
+azkaban
+luigi pipeline
+prefect flow
+dagster asset
+mage pipeline
+kestra
+windmill
+temporal workflow
+temporal activity
+n8n
+make
+integromat
+zapier
+tray.io
+workato
+mulesoft
+boomi
+informatica cloud
+talend cloud
+celigo
+appcues
+pendo
+walkme
+chameleon
+whatfix
+userpilot
+mixpanel funnels
+amplitude cohorts
+retention analysis
+cohort analysis
+funnel analysis
+churn prediction
+ltv prediction
+customer lifetime value
+propensity scoring
+uplift modeling
+causal inference
+dowhy
+econml
+causalml
+synthetic controls
+difference in differences
+rdd
+regression discontinuity
+propensity score matching
+instrumental variables
+sem
+structural equation modeling
+factor analysis
+pca
+principal component analysis
+t-sne
+umap
+isomap
+mds
+multidimensional scaling
+kernel pca
+ica
+independent component analysis
+lda
+linear discriminant analysis
+qda
+quadratic discriminant analysis
+logistic regression
+linear regression
+ridge regression
+lasso regression
+elastic net
+polynomial regression
+stepwise regression
+quantile regression
+robust regression
+generalized linear models
+glm
+gam
+generalized additive models
+survival analysis
+cox proportional hazards
+kaplan-meier
+weibull
+accelerated failure time
+decision trees
+random forest
+extra trees
+gradient boosting
+xgboost
+lightgbm
+catboost
+adaboost
+gradient boosted trees
+gbm
+histgradientboosting
+decision forest
+isolation forest
+one-class svm
+local outlier factor
+lof
+elliptic envelope
+dbscan
+optics
+hdbscan
+k-means
+k-means++
+k-medoids
+k-modes
+mini-batch k-means
+agglomerative clustering
+hierarchical clustering
+ward linkage
+complete linkage
+average linkage
+single linkage
+spectral clustering
+affinity propagation
+mean shift
+gaussian mixture models
+gmm
+expectation maximization
+em algorithm
+bayesian gmm
+dirichlet process
+hidden markov model
+viterbi algorithm
+forward backward algorithm
+baum welch algorithm
+markov decision process
+mdp
+pomdp
+bellman equation
+dynamic programming
+value iteration
+policy iteration
+q-learning algorithm
+sarsa
+expected sarsa
+deep q-networks
+dueling dqn
+double dqn
+prioritized experience replay
+per
+rainbow dqn
+policy gradient methods
+reinforce
+actor-critic algorithm
+a2c
+asynchronous advantage actor-critic
+ppo algorithm
+proximal policy optimization
+trpo
+trust region policy optimization
+ddpg
+deep deterministic policy gradient
+td3
+twin delayed ddpg
+sac
+soft actor-critic
+sac-discrete
+model-based rl
+world models
+dreamer
+muzero
+alphazero
+mcts
+monte carlo tree search
+self-play
+imitation learning
+behavioral cloning
+inverse reinforcement learning
+irl
+gail
+generative adversarial imitation learning
+apprenticeship learning
+evolution strategies
+cma-es
+neat
+neuroevolution of augmenting topologies
+hyperneat
+genetic programming
+genetic algorithm
+symbolic regression
+gplearn
+pysr
+symbolic ai
+expert systems
+knowledge representation
+ontology engineering
+description logic
+first order logic
+prolog
+datalog
+answer set programming
+asp
+clingo
+swi-prolog
+gnu prolog
+clips
+drools
+jess
+rule engines
+business rules
+rete algorithm
+constraint satisfaction
+csp solver
+minizinc
+z3
+z3 theorem prover
+smt solver
+sat solver
+minisat
+cryptominisat
+kissat
+cadical
+glucose
+cvc4
+cvc5
+yices
+boolector
+formal methods
+tla+
+pluscal
+alloy
+coq
+lean
+lean 4
+isabelle
+isabelle/hol
+agda
+idris
+f*
+dafny
+vdm
+b-method
+event-b
+formal verification
+model checking
+spin
+promela
+nuXmv
+uppaal
+prism model checker
+storm model checker
+rodin
+static analysis tools
+abstract interpretation framework
+ast
+abstract syntax tree
+cst
+concrete syntax tree
+cfg
+control flow graph
+dfg
+data flow graph
+call graph
+ssa
+static single assignment
+intermediate representation
+ir
+llvm ir
+gimple
+tree-ssa
+bytecode
+jvm bytecode
+clr bytecode
+cil
+wasm bytecode
+dalvik bytecode
+dex
+smali
+disassembler
+decompiler
+ghidra decompiler
+ida pro decompiler
+retdec
+jeb decompiler
+jadx
+cfr
+fernflower
+procyon
+dnspy
+ilspy
+dotpeek
+reflector
+binary analysis
+symbolic execution engine
+angr framework
+manticore
+triton
+s2e
+klee symbolic vm
+fuzzing harness
+coverage guided fuzzing
+sanitizers
+asan
+address sanitizer
+tsan
+thread sanitizer
+msan
+memory sanitizer
+ubsan
+undefined behavior sanitizer
+lsan
+leak sanitizer
+cfi
+control flow integrity
+safestack
+shadow stack
+stack canary
+dep
+data execution prevention
+nx bit
+aslr
+address space layout randomization
+pie
+position independent executable
+relro
+read only relocations
+fortify source
+pax
+grsecurity
+selinux policy
+apparmor profile
+seccomp filter
+bpf filter
+landlock sandbox
+bubblewrap
+firejail
+nsjail
+cgroups limits
+systemd slice
+systemd scope
+oom killer
+cgroups memory controller
+cpu affinity
+taskset
+numa
+numactl
+hugepages
+transparent hugepages
+thp
+swap
+zswap
+zram
+io scheduler
+bfq
+mq-deadline
+kyber
+none
+nvme
+pcie
+sata
+sas
+scsi
+ahci
+uefi
+bios
+coreboot
+libreboot
+tianocore
+edk2
+secure boot
+measured boot
+tpm
+tpm 2.0
+trusted platform module
+luks
+dm-crypt
+cryptsetup
+bitlocker
+filevault
+veracrypt
+fscrypt
+ecryptfs
+encfs
+gocryptfs
+tomb
+key management
+gpg
+pgp
+gnupg
+yubikey gpg
+age encryption
+rage
+rage encryption
+minisign
+signify
+ssh keys
+ed25519
+rsa 4096
+ecdsa
+fido u2f keys
+passphrase
+argon2
+argon2id
+bcrypt
+scrypt
+pbkdf2
+sha512
+sha256
+sha3
+blake2
+blake3
+keccak
+whirlpool
+ripemd160
+md5
+sha1
+hmac
+cmac
+gmac
+poly1305
+chacha20
+chacha20-poly1305
+aes-gcm
+aes-cbc
+aes-ctr
+aes-xts
+rsa-oaep
+rsa-pss
+ecdsa signature
+ed25519 signature
+ecdh
+x25519
+diffie hellman
+forward secrecy
+pfs
+post-quantum cryptography
+pqc
+kyber
+ml-kem
+dilithium
+ml-dsa
+sphincs+
+slh-dsa
+falcon
+fn-dsa
+classic mceliece
+hqc
+bike
+sike
+ntru
+rainbow signature
+stateful hash-based signatures
+xmss
+lms
+qkd
+quantum key distribution
+bb84
+e91
+quantum cryptography
+quantum algorithms
+shor's algorithm
+grover's algorithm
+deutsch-jozsa
+quantum fourier transform
+qft
+vqe
+variational quantum eigensolver
+qaoa
+quantum approximate optimization algorithm
+quantum machine learning
+qml
+quantum neural networks
+pennylane
+qiskit terra
+qiskit aer
+qiskit ibmq
+cirq google
+forest rigetti
+braket aws
+azure quantum
+dwave
+ocean sdk
+quantum annealing
+qubo
+ising model
+simulated quantum annealing
+tensor networks
+matrix product states
+mps
+peps
+mera
+itensor
+quimb
+tensorly
+opt_einsum
+einsum
+jax.numpy
+torch.einsum
+tf.einsum
+automatic differentiation
+autodiff
+forward mode ad
+reverse mode ad
+backpropagation
+autograd
+tape-based autodiff
+source-to-source autodiff
+enzyme
+zygote.jl
+forwarddiff.jl
+finite differences
+gradient checking
+hessian
+jacobian
+jvp
+jacobian vector product
+vjp
+vector jacobian product
+fisher information matrix
+natural gradient
+hvp
+hessian vector product
+l-bfgs
+bfgs
+conjugate gradient
+gradient descent
+sgd
+stochastic gradient descent
+adam
+adamw
+rmsprop
+adagrad
+adadelta
+nadam
+radam
+lion optimizer
+sophia optimizer
+lamb optimizer
+lars optimizer
+gradient clipping
+learning rate schedule
+cosine annealing
+warmup cosine
+step lr
+exponential lr
+reduce on plateau
+one cycle lr
+cyclical lr
+batch normalization
+layer normalization
+instance normalization
+group normalization
+weight normalization
+spectral normalization
+rmsnorm
+swin transformer
+vit
+vision transformer
+deit
+cait
+mae
+masked autoencoders
+beit
+swin v2
+convnext
+resnet
+resnext
+wide resnet
+densenet
+mobilenet
+mobilenetv2
+mobilenetv3
+shufflenet
+efficientnet
+efficientnetv2
+regnet
+repvgg
+vgg
+alexnet
+lenet
+inception
+googlenet
+xception
+squeeze-and-excitation
+se-net
+cbam
+non-local neural networks
+graph convolution
+message passing
+gcn layer
+gat layer
+graphsage
+gin layer
+chebconv
+graph transformer
+relational gcn
+rgcn
+link prediction
+node classification
+graph classification
+knowledge graph embedding
+transe
+transr
+transh
+rotate
+complex
+distmult
+rescal
+tucker
+hole
+conve
+boxe
+hyperspherical embeddings
+poincare embeddings
+hyperbolic neural networks
+lorentz model
+klein model
+manifold learning
+riemannian geometry
+riemannian optimization
+geoopt
+geomstats
+differential geometry
+lie groups
+so(3)
+se(3)
+su(2)
+quaternions
+dual quaternions
+rotation matrices
+euler angles
+axis-angle
+rodrigues formula
+screw theory
+spatial vector algebra
+featherstone
+pinocchio library
+drake robotics
+bullet physics engine
+dart physics
+ode physics
+mujoco physics
+isaac gym
+brax
+warp nvidia
+taichi lang
+halide
+tvm tensor ir
+triton openai
+cuda c
+cuda c++
+ptx
+cublas
+cudnn
+cusparse
+cusolver
+cufft
+curand
+nccl
+rccl
+oneapi
+dpc++
+sycl
+hip
+rocm
+metal performance shaders
+mps graph
+vulkan compute
+kompute
+ncnn
+mnn
+tengine
+arm compute library
+acl
+xnnpack
+qnnpack
+gemmlowp
+fbgemm
+cutlass
+wmma
+mma tensor cores
+matrix cores
+tpu kernels
+xla
+jax xla
+stablehlo
+torch dynamo
+torch inductor
+aot autograd
+fx graph
+torchscript
+jit compilation
+numba
+pypy
+cython
+cffi
+ctypes
+swig
+pybind11
+nanobind
+boost.python
+rust pyo3
+maturin
+setuptools-rust
+milksnake
+wasm-bindgen
+web-sys
+js-sys
+emscripten
+wasi
+wasmtime
+wasmer
+wamr
+wasm3
+lucet
+wavm
+v8
+spidermonkey
+javascriptcore
+chakra
+quickjs
+duktape
+hermes
+jerryscript
+micropython
+circuitpython
+luajit
+lua
+fennel
+teal
+moonscript
+janet
+racket
+guile
+gambit
+chicken scheme
+chez scheme
+common lisp
+sbcl
+ccl
+ecl
+clasp
+clojure clj
+babashka
+nbb
+shadow-cljs
+leiningen
+clj cli
+deps.edn
+sbt
+scala-cli
+mill
+maven wrapper
+gradle wrapper
+gradle kotlin dsl
+gradle groovy dsl
+bazel
+buck
+pants
+please
+meson
+ninja
+cmake
+make build
+qmake
+autotools
+automake
+autoconf
+libtool
+premake
+premake5
+xmake
+zig build
+cargo
+cargo-make
+cargo-generate
+cargo-watch
+cargo-expand
+cargo-tarpaulin
+cargo-flamegraph
+cargo-binstall
+rustup
+rustc
+clippy
+rustfmt
+rust-analyzer
+rls
+gopls
+pyright
+pylance
+jedi
+tsserver
+vtsls
+biome
+oxlint
+oxc
+ruff linter
+black formatter
+isort formatter
+prettier formatter
+clang-format
+clang-tidy
+google-java-format
+spotless
+scalafmt
+ktlint
+detekt
+swiftformat
+swiftlint
+rubocop
+standardrb
+phpcs
+php-cs-fixer
+psalm
+phpstan
+psalm static analysis
+golangci-lint
+staticcheck
+revive
+errcheck
+go vet
+go test
+go generate
+go modules
+go workspace
+cargo workspace
+npm workspace
+yarn berry
+pnpm workspace
+turborepo
+nx monorepo
+lerna
+rush monorepo
+bit.dev
+changesets
+semantic-release
+commitlint
+cz-cli
+conventional commits
+git flow
+trunk based development
+github flow
+gitlab flow
+feature branch
+pull request
+merge request
+cherry-pick
+rebase
+interactive rebase
+git bisect
+git reflog
+git stash
+git submodule
+git subtree
+git lfs
+git-filter-repo
+bfg repo-cleaner
+git worktree
+bare repo
+pre-push hook
+commit-msg hook
+github app
+github actions workflow
+composite action
+reusable workflow
+matrix build
+artifact upload
+cache action
+setup-node
+setup-python
+setup-go
+setup-rust
+setup-java
+security scanning action
+codeql action
+dependabot alerts
+secret scanning
+push protection
+branch protection
+rulesets
+required status checks
+code owners
+codeowners
+reviewers
+pull request template
+issue template
+discussions
+wiki
+releases
+tags
+changelog
+keep a changelog
+semantic versioning
+semver
+zero ver
+calver
+date based versioning
+docker tag
+container registry
+ghcr.io
+docker hub
+ecr
+gcr
+artifact registry
+acr
+quay.io
+harbor
+jfrog artifactory
+sonatype nexus
+proget
+verdaccio
+devpi
+pypi registry
+npm registry
+crates.io
+packagist
+rubygems
+maven central
+clojars
+nuget
+chocolatey
+winget
+homebrew
+brew tap
+brew cask
+apt repository
+ppa
+copr
+yum repo
+dnf repo
+pacman repo
+aur
+arch user repository
+pkgsrc
+nixpkgs
+nix flakes
+guix
+spack
+conda-forge
+bioconda repo
+distrobox
+toolbox
+devcontainer
+vscode remote
+codespaces
+gitpod
+cloud workstation
+coder
+eclipse che
+openvscode
+ssh remote
+tmux
+screen
+byobu
+zellij
+alacritty
+kitty
+wezterm
+foot
+hyper
+iterm2
+gnome terminal
+konsole
+xfce terminal
+windows terminal
+powershell
+pwsh
+powershell core
+cmd
+command prompt
+bash shell
+zsh
+oh-my-zsh
+prezto
+powerlevel10k
+starship prompt
+fish shell
+elvish
+nushell
+tcsh
+csh
+ksh
+dash shell
+posix shell
+coreutils
+gnu coreutils
+uutils
+toybox
+findutils
+diffutils
+patch
+sed
+awk
+gawk
+mawk
+grep
+egrep
+fgrep
+ripgrep
+ag
+silver searcher
+ack
+fzf
+fzy
+peco
+skim
+fd
+fd-find
+bat
+cat
+less pager
+most
+glow
+eza
+exa
+lsd
+dust
+ncdu
+du
+df
+duf
+btop
+htop
+top
+glances
+yazi
+ranger
+midnight commander
+nnn
+lf
+broot
+tree
+jq
+yq
+xq
+fx
+jless
+dasel
+httpie
+curl tool
+wget tool
+aria2
+curlie
+xh
+dog dns
+dig
+nslookup
+drill
+bind-utils
+mtr
+traceroute
+tracepath
+ping
+fping
+prettyping
+iperf
+iperf3
+netcat
+nc
+ncat
+socat
+tcpdump tool
+tshark
+wireshark cli
+termshark
+bandwhich
+iftop
+nload
+nethogs
+bmon
+vnstat
+speedtest-cli
+fast-cli
+ethtool
+iproute2
+ip tool
+ifconfig
+netstat
+ss tool
+arp
+route
+bridge-utils
+veth
+tap
+tun
+wireguard-tools
+wg
+wg-quick
+openconnect
+anyconnect cli
+forticli
+openvpn cli
+wpa_supplicant
+iw
+iwconfig
+nmcli
+networkmanager
+nmtui
+connman
+wpa_cli
+bluetoothctl
+bluez
+hciconfig
+rfkill
+alsamixer
+pulseaudio
+pavucontrol
+pipewire
+pw-cli
+wpctl
+wireplumber
+jack audio
+v4l2-ctl
+xrandr
+arandr
+wlr-randr
+kanshi
+wayland
+sway
+hyprland
+river
+dwl
+weston
+x11
+xorg
+i3
+i3wm
+bspwm
+dwm
+awesome wm
+xmonad
+qtile
+openbox
+fluxbox
+xfce
+mate
+lxde
+lxqt
+cinnamon
+gnome
+kde plasma
+pantheon
+budgie
+deepin
+cosmic
+system76 cosmic
+pop!_os
+ubuntu desktop
+kubuntu
+xubuntu
+lubuntu
+fedora silverblue
+kinoite
+opensuse microos
+nixos desktop
+void musl
+alpine desktop
+tails
+qubes os
+kali
+parrot os
+blackarch
+backbox
+whonix
+freebsd desktop
+openbsd desktop
+netbsd desktop
+haiku os
+reactos
+serenity os
+templeos
+minix 3
+plan 9
+9front
+inferno
+hurd
+gnu hurd
+illumos distro
+omniosce
+smartos live
+openindiana
+tribblix
+nexenta
+solaris 11
+macos sonoma
+macos sequoia
+ios 18
+android 15
+harmonyos
+tizen
+sailfish os
+postmarketos
+ubuntu touch
+plasma mobile
+droidian
+mobian
+pinephone
+librem 5
+fairphone
+grapheneos
+calyxos
+lineageos
+e/os/
+calyx
+divestos
+iode os
+resurrection remix
+paranoid android
+omnirom
+dirty unicorns
+crDroid
+havoc os
+pixel experience
+arrowos
+evolution x
+corvus os
+bliss rom
+aicp
+carbonrom
+aospextended
+statixos
+protonaosp
+yaap
+sparkos
+risingos
+derpfest
+cherishos
+project elixir
+superioros
+alphaos
+fluid os
+syberia os
+nusantara os
+octavi os
+revengeos
+descendant os
+corvus rom
+posp
+pixysos
+legionos
+matrixx
+hycon os
+ancient os
+dotos
+arrow os
+havoc
+crdroid android
+lineage
+aosp
+android open source project
+android ndk
+android sdk tools
+adb
+android debug bridge
+fastboot
+scrcpy
+vysor
+anbox
+waydroid
+genymotion
+bluestacks
+nox player
+ldplayer
+mumu player
+bhyve vm
+qemu-system-arm
+qemu-system-x86_64
+qemu-system-riscv64
+qemu-system-mips
+qemu-system-ppc
+bochs
+dosbox
+dosbox-staging
+pcem
+86box
+fs-uae
+winuae
+vice c64
+hatari
+stella atari
+fceux
+nestopia
+mesen
+snes9x
+bsnes
+higan
+ares emulator
+mgba
+vba-m
+desmume
+melonDS
+citra
+yuzu
+ryujinx
+cemu
+rpcs3
+pcsx2
+duckstation
+mednafen
+retroarch
+libretro
+mame
+finalburn neo
+flycast
+redream
+dolphin emulator
+ppsspp
+pcsx-reloaded
+epsxe
+xemu
+cxbx-reloaded
+vita3k
+shadps4
+fpPS4
+spine ps4
+kyty
+rpcsx
+pcsx3
+openemu
+emulationstation
+pegasus frontend
+launchbox
+attract mode
+batocera
+recalbox
+retropie
+lakka
+chimeraos
+steamos
+holoiso
+bazzite
+nobara
+nobara linux
+chimera
+geforce now
+xbox cloud gaming
+playstation plus
+amazon luna
+shadow pc
+boosteroid
+airgpu
+paperspace
+runpod
+vast.ai
+lambdalabs
+coreweave
+fluidstack
+tensordock
+jarvislabs
+hyperstack
+civo
+vultr
+digitalocean
+linode
+akamai connected cloud
+hetzner
+ovh
+scaleway
+leaseweb
+equinix metal
+latitude.sh
+phoenixnap
+servermania
+hostkey
+hostinger
+bluehost
+siteground
+dreamhost
+inmotion
+a2 hosting
+godaddy
+namecheap
+cloudflare registrar
+route53
+google domains
+squarespace domains
+porkbun
+gandi
+hover
+dynadot
+enom
+tucows
+resellerclub
+opensrs
+internetx
+denic
+nominet
+afnic
+cira
+eurid
+icann
+iana
+ripe ncc
+arin
+apnic
+lacnic
+afrinic
+bgp looking glass
+radb
+irr
+peeringdb
+ixp
+internet exchange
+ams-ix
+de-cix
+linx
+equinix exchange
+torix
+anycast
+unicast
+multicast
+broadcast
+geodns
+latency based routing
+failover routing
+weighted routing
+multi-value routing
+traffic manager
+azure traffic manager
+aws route 53 traffic flow
+cloudflare load balancing
+f5 big-ip
+citrix netscaler
+a10 networks
+kemp load balancer
+radware
+barracuda
+fortiadc
+pulse secure
+cisco asa
+cisco firepower
+checkpoint gateway
+palo alto pa series
+fortinet fortigate
+sophos xg
+watchguard
+sonicwall
+netgate pfSense
+protectli
+firewalla
+gl.inet
+openwrt router
+mikrotik routerboard
+ubiquiti unifi
+edgerouter
+unifi dream machine
+omada tp-link
+ruckus
+aruba instant on
+cisco meraki
+cambium
+engenius
+d-link
+netgear orbi
+asus wrt
+merlin asuswrt
+dd-wrt router
+freshtomato
+openwrt snapshot
+padavan
+gargoyle router
+wifi 6
+wifi 6e
+wifi 7
+802.11ax
+802.11be
+802.11ac
+802.11n
+mimo
+mu-mimo
+ofdda
+beamforming
+wpa3
+wpa3 enterprise
+802.1x
+radius server
+freeradius
+tacacs+
+diameter protocol
+ldap server
+openldap
+389 directory server
+freeipa
+active directory domain services
+ad ds
+ad fs
+ad cs
+azure active directory
+microsoft entra id
+okta
+ping identity
+auth0
+onelogin
+cyberark
+beyondtrust
+thycotic
+delinea
+hashicorp boundary privileged access
+teleport
+gravitational teleport
+strongdm
+bastion zero
+hoop.dev
+guacamole
+apache guacamole
+remmina
+freerdp
+rdesktop
+tigervnc
+tightvnc
+realvnc
+ultravnc
+turbovnc
+x2go
+nomachine
+anydesk
+teamviewer
+rustdesk
+parsec
+moonlight
+sunshine streaming
+steam remote play
+geforce experience
+razer cortex
+amd adrenalein
+intel arc control
+obs studio
+streamlabs
+prism live
+xsplit
+vmix
+wirecast
+ecamm live
+lightstream
+ndi
+newtek ndi
+srt protocol
+rtmp streaming
+rtmps
+hls streaming
+mpeg-dash
+ll-hls
+webrtc live streaming
+whip protocol
+whep protocol
+icecast
+shoutcast
+liquidsoap
+airtime
+azuracast
+radiojar
+sam broadcaster
+mixxx
+virtualdj
+serato
+traktor
+rekordbox
+engine dj
+pioneer dj
+denon dj
+numark
+allen & heath
+behringer
+focusrite
+scarlett
+motu
+rme
+universal audio
+apollo interface
+shure
+sm7b
+rode
+rodecaster
+elgato
+stream deck
+cam link
+wave mic
+blue yeti
+hyperx
+fifine
+audio-technica
+sennheiser
+beyerdynamic
+sony headphones
+bose
+jbl
+genelec
+krk
+yamaha studio monitors
+adam audio
+presonus
+studio one
+reaper daw
+cubase
+nuendo
+bitwig
+tracktion
+waveform
+renoise
+sunvox
+caustic
+garageband
+audacity
+tenacity
+ocenaudio
+goldwave
+sound forge
+izotope
+ozone
+rx audio repair
+neutron
+nectar
+fabfilter
+pro-q
+waves plugins
+universal audio uad
+soundtoys
+valhalla dsp
+native instruments
+kontakt
+massive
+serum
+vital synth
+pigments arturia
+diva u-he
+omnisphere
+spire
+sylenth1
+nexus reFX
+phase plant
+spitfire audio
+orchestral tools
+eastwest sounds
+vsl
+vienna symphonic library
+heavyocity
+projectSAM
+cinematic studio series
+audiobro
+cinesamples
+8dio
+soundiron
+splice
+loopcloud
+output arcade
+bandlab
+soundtrap
+audiotool
+flat.io
+musescore
+sibelius
+finale
+dorico
+lilypond
+guitar pro
+tuxguitar
+biab
+band in a box
+vocaloid
+synthesizer v
+cevio
+utau
+diffsinger
+ace studio
+voice conversion
+so-vits-svc
+rvc
+retrieval-based voice conversion
+ddsp
+diffwave
+wavenet
+tacotron
+vits
+fastspeech
+bark
+tortoise-tts
+xtts
+coqui tts
+coqui ai
+piper tts
+mimic
+mycroft
+rhasspy
+home assistant voice
+almond
+snips
+porcupine
+snowboy
+picovoice
+vosk
+kaldi
+pocketsphinx
+sphinx4
+julius
+deepSpeech
+wav2vec2
+hubert
+whisper.cpp
+insanely-fast-whisper
+faster-whisper
+whisperx
+distil-whisper
+seamlessm4t
+nllb
+no language left behind
+m2m-100
+marianmt
+opus-mt
+helsinki-nlp
+google translate api
+deepl api
+deeplx
+libretranslate
+bergamot
+apertium
+argos translate
+stanza
+spacy
+spacy transformers
+trf
+nltk
+textblob
+gensim
+corenlp
+stanford nlp
+allen nlp
+flair
+flair embeddings
+conll
+conllu
+udpipe
+universal dependencies
+fasttext embeddings
+word2vec c
+gensim word2vec
+doc2vec
+fasttext python
+spacy pipeline
+custom components
+prodigy
+label studio
+doccano
+brat
+tagtog
+snorkel
+weak supervision
+active learning
+modAL
+cleanlab
+confident learning
+snorkel flow
+rubrix
+argilla
+phoenix arize
+arize ai
+whylabs
+evidently ai
+great expectations profiling
+ydata-profiling
+pandas-profiling
+sweetviz
+autoviz
+dtale
+lux-api
+sanddance
+kepler gl
+deck gl
+pydeck
+folium
+geemap
+ipyleaflet
+leafmap
+contextily
+geoplot
+cartopy
+basemap
+iris
+metpy
+wrf-python
+salem
+geotable
+pointpats
+spaghetti
+esda
+pysal
+splot
+quantecon
+statsmodels
+linearmodels
+arch
+pingouin
+scikit-posthocs
+hypopars
+scikit-bio
+biopython
+ete3
+dendropy
+scikit-allel
+pysam
+vcfpy
+cyvcf2
+bedtools
+pybedtools
+deeptools
+macs2
+macs3
+homer
+bowtie
+bowtie2
+bwa
+bwa-mem2
+minimap2
+hisat2
+star aligner
+salmon
+kallisto
+stringtie
+cufflinks
+deseq2
+edger
+limma
+seurat
+scanpy
+anndata
+squidpy
+cellrank
+scvi-tools
+monocle
+trajectory inference
+single cell rna-seq
+scrna-seq
+spatial transcriptomics
+visium
+merfish
+xenium
+seqfish
+slide-seq
+stereo-seq
+cosmx
+cellpose
+stardist
+qupath
+omero
+imagej
+fiji
+napari
+cellprofiler
+ilastik
+bio-formats
+microscopy
+confocal
+two-photon
+light sheet
+super resolution
+electron microscopy
+cryo-em
+relion
+cryosparc
+cisTEM
+eman2
+scipion
+chimerax
+ucsf chimera
+pymol script
+vmd
+visual molecular dynamics
+coot
+phenix
+ccp4
+shelx
+buster
+refmac
+auto-bypasser
+alphafold2
+alphafold3
+colabfold
+esmfold
+omegafold
+rosettafold
+rosettafold-all-atom
+esm2
+esm-1b
+progen
+protbert
+protgpt2
+proteinmpnn
+diffdock
+equibind
+alphaflow
+foldseek
+mmseqs2
+hh-suite
+hhblits
+hhsearch
+jackhmmer
+hmmer
+blastp
+blastn
+blastx
+tblastn
+tblastx
+diamond aligner
+usearch
+vsearch
+cd-hit
+clustal omega
+mafft
+muscle
+t-coffee
+prank
+fasttree
+raxml
+iq-tree
+phyml
+mrbayes
+beast
+beast2
+tracer
+figtree
+mega
+jalview
+seaview
+unipro ugene
+snapgene
+benchling
+clc bio
+geneious
+galaxy platform
+galaxy workflow
+nextflow
+nf-core
+snakemake
+cwl
+common workflow language
+wdl
+workflow description language
+cromwell
+toil
+bpipe
+flowr
+parabricks
+nvidia parabricks
+gatk
+broad gatk
+mutect2
+haplotypecaller
+variant quality score recalibration
+vqsr
+annovar
+vep
+variant effect predictor
+snpeff
+bcftools
+vcftools
+plink
+plink2
+king
+gcta
+ldsc
+prsice
+polygenic risk score
+gwas
+genome wide association study
+phewas
+epistasis
+fine mapping
+caviar
+paintor
+susie
+finemap
+coloc
+colocalization
+mr-base
+mendelian randomization
+twosamplemr
+gtxeft
+eqtl analysis
+matrix eqtl
+fastqtl
+qtltools
+splicing qtl
+sqtl
+meqtl
+chip-seq
+atac-seq
+cut&tag
+cut&run
+dnase-seq
+mnase-seq
+fdr
+bonferroni correction
+benjamini-hochberg
+q-value
+p-value
+null hypothesis
+alternative hypothesis
+type i error
+type ii error
+statistical power
+effect size
+cohen's d
+odds ratio
+relative risk
+hazard ratio
+confidence interval
+bootstrap
+permutation test
+t-test
+welch's t-test
+paired t-test
+mann-whitney u test
+wilcoxon signed-rank test
+anova
+kruskal-wallis
+friedman test
+tukey hsd
+dunn's test
+chi-square test
+fisher's exact test
+mcnemar's test
+pearson correlation
+spearman correlation
+kendall's tau
+biserial correlation
+point biserial
+cramer's v
+mutual information
+entropy
+kl divergence
+js divergence
+wasserstein distance
+earth mover's distance
+maximum mean discrepancy
+mmd
+cosine distance
+mahalanobis distance
+minkowski distance
+chebyshev distance
+canberra distance
+bray-curtis
+jaccard index
+sorensen-dice
+overlap coefficient
+hamming distance
+levenshtein distance
+jaro-winkler
+damerau-levenshtein
+longest common subsequence
+lcs
+needleman-wunsch
+smith-waterman
+hirschberg's algorithm
+rabin-karp
+knuth-morris-pratt
+kmp
+boyer-moore
+aho-corasick
+commentz-walter
+regex
+regular expressions
+pcre
+pcre2
+re2
+hyperscan
+vectorscan
+ragel
+flex
+bison
+yacc
+antlr
+antlr4
+tree-sitter
+peg parser
+packrat parser
+nom parser
+pest parser
+lalrpop
+chumsky
+combine
+winnow
+parsec haskell
+megaparsec
+attoparsec
+trifecta
+fastparse
+cats-parse
+instaparse
+pyparsing
+ply python
+lark parser
+textx
+nearley
+peg.js
+jison
+chevrotain
+ohm.js
+arcsecond
+parsimmon
+lezer
+monaco editor
+codemirror
+codemirror 6
+ace editor
+prism.js
+highlight.js
+shiki
+syntect
+rouge
+pygments
+chroma highlighter
+tree-sitter-highlight
+lsp
+language server protocol
+dap
+debug adapter protocol
+bsp
+build server protocol
+json-rpc
+protocol buffers rpc
+connect-rpc
+twirp
+grpc-gateway
+restful api design
+openapi
+openapi 3.0
+openapi 3.1
+swagger
+swagger-ui
+redoc
+scalar api
+stoplight
+elements
+apidog
+postman collection
+insomnia collection
+bruno
+hoppscotch
+yaak
+http client
+curl command
+wget command
+fetch api
+axios library
+got library
+ky library
+superagent
+urllib3 library
+requests library
+httpx library
+aiohttp library
+reqwest
+hyper rust
+ureq
+isahc
+surf rust
+faraday
+typhoeus
+httparty
+guzzle
+guzzlehttp
+symfony http-client
+retrofit
+okhttp
+ktor client
+alamofire
+urlsession
+afnetworking
+restsharp
+flurl
+httpclient c#
+dart http
+dio dart
+chopper
+flutter bloc
+riverpod
+provider flutter
+getx
+mobx dart
+redux dart
+signals
+preact signals
+solid signals
+vue reactivity
+mobx reactivity
+svelte stores
+svelte 5 runes
+jotai
+recoil
+zustand store
+redux toolkit
+rtk query
+tanstack query
+react query
+swr
+apollo client
+urql
+relay
+graphql request
+graphql yoga
+apollo server
+mercurius
+pothos
+nexus graphql
+type-graphql
+strawberry graphql
+ariadne
+async-graphql
+juniper graphql
+absinthe
+caliban
+sangria
+graphql java
+dgs framework
+gqlgen
+nestjs
+express framework
+koa
+fastify
+hapi
+restify
+adonisjs
+feathersjs
+sailsjs
+loopback
+strapi backend
+directus backend
+trpc
+ts-rest
+zod
+valibot
+yup
+joi
+superstruct
+io-ts
+typebox
+arktype
+class-validator
+pydantic v2
+marshmallow
+cerberus
+schematics
+attrs python
+dataclasses
+msgspec
+cattrs
+pydantic-settings
+dynaconf
+hydra
+omegaConf
+python-decouple
+environ-config
+viper go
+cobra go
+urfave/cli
+kingpin
+kong go
+clap rust
+structopt
+argh
+bpaf
+lexopt
+docopt
+click python
+argparse
+typer
+fire python
+commander.js
+yargs
+meow
+cac
+citty
+clipanion
+oclif
+ink react cli
+blessed
+curses
+ncurses
+termbox
+crossterm
+ratatui
+tui-rs
+textual
+rich
+curses python
+prompt_toolkit
+bubbletea
+lipgloss
+bubbles
+huh
+termenv
+colorama
+chalk
+colorette
+picocolors
+kleur
+ansi-colors
+cli-color
+figures
+ora
+nanospinner
+prompts
+enquirer
+inquirer
+inquirer.js
+clack
+clack/prompts
+gradient-string
+cowsay
+figlet
+ascii art
+terminal ui
+cli framework
+desktop framework
+electron app
+tauri app
+neutralinojs
+electrino
+nodegui
+proton native
+react desktop
+sciter
+ultralight
+cef
+chromium embedded framework
+webview
+wry
+tao
+muda
+tray icon
+system tray
+native notifications
+toast notifications
+badge notifications
+global shortcuts
+clipboard access
+native file dialog
+drag and drop
+window management
+multi-window
+auto-updater
+electron-builder
+electron-forge
+tauri-bundler
+cargo-bundle
+msi installer
+nsis
+wix toolset
+inno setup
+appimage
+flatpak
+snapcraft
+snap package
+pkg installer
+dmg
+hdiutil
+notarization
+apple notarization
+codesign
+authenticode
+signtool
+osslsigncode
+gpg signature
+cosign signature
+rekor
+fulcio
+sigstore
+in-toto
+slsa
+supply chain levels
+software supply chain
+dependency management
+lockfile
+reproducible builds
+nix derivation
+guix package
+hermetic builds
+remote execution
+remote caching
+build cache
+ccache
+sccache
+turborepo cache
+nx cache
+bazel cache
+pants cache
+docker layer cache
+buildx
+bake
+docker buildx
+multi-arch builds
+qemu binfmt
+cross-compilation
+musl-cross
+zig cc
+cargo-zigbuild
+cross rust
+dockcross
+osxcross
+mingw-w64
+llvm-mingw
+musl libc
+glibc
+uclibc
+dietlibc
+bionic libc
+newlib
+picolibc
+embedded c library
+crt
+c runtime
+libstdc++
+libc++
+llvm libc
+msvc crt
+universal crt
+win32 api
+windows api
+win32com
+wmi
+powershell scripting
+batch scripting
+vbs
+vbscript
+wscript
+cscript
+registry
+regedit
+group policy
+gpo
+active directory users and computers
+adsi
+samr
+lsass
+lsasrv
+ntds.dit
+shadow copies
+vss
+volume shadow copy
+robocopy
+xcopy
+powershell remoting
+winrm
+wmi remoting
+psexec
+smbexec
+atexec
+dcom
+wmi query
+cimv2
+wql
+powershell pipeline
+powershell modules
+psgallery
+nuget package manager
+posh-git
+oh-my-posh
+terminal styling
+nerd fonts
+powerline fonts
+cascadia code
+fira code
+jetbrains mono
+victor mono
+hack font
+source code pro
+inconsolata
+consolas
+sf mono
+menlo
+monaco
+dejavu sans mono
+ubuntu mono
+droid sans mono
+comic mono
+operator mono
+dank mono
+monolisa
+pragmata pro
+iosevka
+berkeley mono
+comic code
+ligature fonts
+programming fonts
+code editor
+visual studio code
+vscode extensions
+vscodium
+cursor editor
+zed editor
+sublime text
+sublime merge
+atom editor
+brackets editor
+textmate
+bbedit
+notepad++
+geany
+kate editor
+gedit
+kwrite
+mousepad
+featherpad
+leafpad
+vim
+neovim
+lunarvim
+astronvim
+nvchad
+lazyvim
+spacevim
+emacs
+doom emacs
+spacemacs
+prelude emacs
+helix editor
+kakoune
+micro editor
+nano editor
+pico editor
+joe editor
+jupp
+fte
+e3
+jed
+ne
+le
+tilde
+slap
+xi editor
+lapce
+amp editor
+kibi
+ox editor
+femto
+bed editor
+vis editor
+sam editor
+ed editor
+ex editor
+vi editor
+posix vi
+original vi
+nvi
+traditional vi
+busybox vi
+elvis
+vile
+bvi
+hex editor
+hexedit
+ghex
+wxhexeditor
+hxd
+hex fiend
+imhex
+010 editor
+kaitai struct
+binwalk
+vulnerability scanner
+nessus scanner
+openvas
+greenbone
+nexpose
+rapid7
+qualys vm
+insightvm
+saint scanner
+acunetix
+netsparker
+invicti
+appscan
+webinspect
+burp suite professional
+burp suite community
+owasp zap scanner
+caido
+mitmproxy
+fiddler
+charles proxy
+proxyman
+wireshark analyzer
+tshark analyzer
+tcpdump analyzer
+kismet
+aircrack-ng
+wifite
+reaver
+bully
+pixiewps
+fern wifi cracker
+hashcat
+john the ripper
+hydra thycotic
+medusa brute
+patator
+ncrack
+crowbar
+cewl
+crunch wordlist
+seclists
+rockyou
+payloadsallthethings
+fuzzdb
+dirbuster
+gobuster
+feroxbuster
+rustbuster
+ffuf
+wfuzz
+dirsearch
+nikto
+whatweb
+wpscan
+joomscan
+droopescan
+nuclei
+project discovery
+subfinder
+httpx pd
+naabu
+katana
+dnsx
+shuffledns
+alterx
+uncover
+mapcidr
+asnmap
+tlsx
+interactsh
+notify pd
+chaos pd
+shodan
+censys
+zoomeye
+fofa
+hunter how
+binaryedge
+greynoise
+virustotal
+hybrid analysis
+any.run
+joe sandbox
+malwarebazaar
+urlhaus
+threatfox
+abuseipdb
+alienvault otx
+anomali
+recorded future
+mandiant
+crowdstrike falcon
+sentinelone singularity
+microsoft defender for endpoint
+mde
+mdo
+defender for office
+defender for identity
+mdi
+defender for cloud
+mdc
+azure sentinel
+microsoft sentinel
+splunk enterprise
+splunk cloud
+elastic security
+qradar
+logrhythm
+arcsight
+exabeam
+securonix
+rapid7 insightidr
+sumo logic siem
+devo
+chronicle
+google chronicle
+siemplify
+cortex xsoar panw
+splunk soar
+phantom soar
+swimlane
+tines
+torq
+shuffle soar
+incident response platform
+thehive
+cortex cert
+misp threat sharing
+opencti
+yeti
+threatconnect
+anomali threatstream
+recorded future portal
+crowdstrike portal
+intigua
+qualys cloud platform
+tanium
+osquery fleet
+fleetdm
+kolide
+uptycs
+wazuh siem
+ossec
+snort ids
+suricata ids
+zeek nsm
+bro
+security onion
+rocknsm
+selks
+arkime
+moloch
+maltrail
+fail2ban
+crowdsec
+sshguard
+denyhosts
+pam
+pluggable authentication modules
+pam_tally2
+pam_faillock
+pam_google_authenticator
+google authenticator pam
+duo security
+duo unix
+yubico pam
+libpam-u2f
+sudoers
+visudo
+wheel group
+sudo group
+su command
+sudo command
+doas
+opendoas
+privilege escalation
+linpeas
+winpeas
+linux exploit suggester
+windows exploit suggester
+seatbelt
+sharpup
+watson
+sherlock
+powerup
+bloodhound ad
+sharphound
+bloodhound.py
+plumhound
+azurehound
+roadtools
+aadinternals
+impacket
+secretsdump
+psexec.py
+smbclient.py
+wmiexec.py
+dcomexec.py
+atexec.py
+ntlmrelayx
+responder
+mitm6
+inveigh
+pre2k
+krbrelay
+krbrelayx
+certipy
+adcs
+certutil
+rubeus
+kekeo
+mimikatz exe
+pypykatz
+nanodump
+procdump
+dumpert
+lsass dumper
+cobalt strike beacon
+sliver c2
+havoc c2
+mythic c2
+covenant c2
+poshc2
+merlin c2
+empire c2
+starkiller
+shad0w
+brute ratel
+badger
+nemesis
+redline
+meterpreter
+metasploit framework
+msfconsole
+msfvenom
+armitage
+cobalt strike aggressor
+malleable c2
+domain fronting
+dns tunneling
+iodine
+dnscat2
+chisel
+chisel tunnel
+ligolo-ng
+ngrok tunnel
+revsocks
+gost
+frp tunnel
+plink tunnel
+ssh dynamic port forwarding
+socks5 proxy
+socks4 proxy
+http proxy
+proxychains
+proxychains-ng
+tsocks
+redsocks
+privoxy
+squid proxy
+haproxy proxy
+tinyproxy
+charles
+fiddler classic
+mitmweb
+burp collaborator
+project discovery interactsh
+canary tokens
+thinkst canary
+honeytokens
+honeypot
+cowrie
+dionaea
+conpot
+honeyd
+opencanary
+honeymail
+t-pot
+kippo
+glastopf
+snare
+tanner
+spamd
+postfix tarpit
+iptables tarpit
+ddos mitigation
+syn flood
+udp flood
+icmp flood
+http flood
+slowloris
+slowloris attack
+r-u-dead-yet
+rudy
+goldeneye
+hulk dos
+loic
+hoic
+xerxes
+tsunami
+dns amplification
+ntp amplification
+snmp amplification
+memcached amplification
+ssdp amplification
+chargen amplification
+ldap amplification
+bgp hijacking
+route leaks
+rpki
+roas
+bgpsec
+man in the middle
+arp spoofing
+arpspoof
+bettercap
+ettercap
+cain and abel
+dsniff
+macof
+cam table overflow
+dhcp starvation
+rogue dhcp
+yersinia
+stp attack
+cdp attack
+dtp attack
+vlan hopping
+double tagging
+switch spoofing
+mac address spoofing
+ip address spoofing
+smurf attack
+fraggle attack
+teardrop attack
+ping of death
+land attack
+syn proxy
+syn cookies
+tcp syncookies
+reverse path filtering
+rp_filter
+bcp 38
+source address validation
+save
+ddos scrubbers
+cloudflare magic transit
+aws shield
+aws shield advanced
+azure ddos protection
+akamai prolexic
+imperva incapsula
+fastly ddos
+radware defensepro
+arbor networks
+netscout arbor
+corero
+nexusguard
+verisign ddos
+neustar
+f5 silverline
+ovh antiddos
+hetzner ddos protection
+voxility
+path.net
+psychz
+ovh vac
+scrubbing center
+gre tunnel ddos
+bgp anycast ddos
+rate limiting iptables
+fail2ban ddos
+crowdsec bouncer
+nginx rate limiting
+haproxy rate limit
+caddy rate limit
+traefik rate limit
+envoy rate limit
+kong rate limiting
+redis rate limiter
+leaky bucket algorithm
+token bucket algorithm
+fixed window counter
+sliding window log
+sliding window counter
+cloudflare turnstile
+google recaptcha
+recaptcha v2
+recaptcha v3
+recaptcha enterprise
+hcaptcha
+arkoselabs
+funcaptcha
+geetest
+mcaptcha
+altcha
+friendly captcha
+proof of work captcha
+pow
+bot detection
+bot mitigation
+device fingerprinting
+canvas fingerprinting
+webgl fingerprinting
+audio fingerprinting
+font detection
+client hints
+user agent parsing
+ua-parser
+device-detector
+fingerprintjs
+fingerprintjs pro
+creepjs
+botd
+datadome
+kasada
+perimeterx
+human security
+akamai bot manager
+cloudflare bot management
+f5 shape security
+imperva bot management
+radware bot manager
+shieldsquare
+distil networks
+fastly bot protection
+aws waf bot control
+azure bot management
+scrape detection
+anti-scraping
+headless browser detection
+puppeteer-stealth
+playwright-stealth
+selenium-stealth
+undetected-chromedriver
+uc
+nodriver
+patchright
+drissionpage
+playwright python
+puppeteer node
+selenium webdriver
+selenium grid
+appium mobile
+webdriverio
+nightwatch.js
+cypress test
+playwright test
+testcafe
+codeceptjs
+puppeteer firefox
+playwright webkit
+chromium
+ungoogled-chromium
+brave browser
+firefox
+librewolf
+tor browser
+mullvad browser
+waterfox
+pale moon
+floorp
+ladybird
+safari
+webkit
+blink
+gecko
+servo
+khtml
+dillo
+netsurf
+lynx
+w3m
+links browser
+elinks
+browsh
+gemini protocol
+gopher protocol
+finger protocol
+spartan protocol
+lagrange browser
+amfora
+castor
+av-98
+bollux
+smolnet
+small web
+indieweb
+webmention
+microformats
+micropub
+microsub
+indieauth
+activitypub
+mastodon
+pleroma
+akkoma
+misskey
+firefish
+sharkey
+calckey
+lemmy
+kbin
+mbin
+peertube
+pixelfed
+bookwyrm
+friendica
+hubzilla
+diaspora
+fediverse
+at protocol
+bluesky
+pds
+atproto
+nostr
+damus
+amethyst
+snort nostr
+primal
+coracle
+nos2x
+alby
+lightning network
+bitcoin lightning
+lnd
+c-lightning
+cln
+eclair
+ldk
+lightning development kit
+btcpayserver
+opennode
+strike
+strike api
+strike bitcoin
+lnurl
+lightning address
+nostr zaps
+zaps
+nip-05
+nip-07
+nip-46
+nip-57
+nostr protocol
+decentralized identity
+did
+did:key
+did:ion
+did:web
+did:pds
+verifiable credentials
+vc
+w3c vc
+solid project
+tim berners-lee solid
+inrupt
+solid pod
+interledger
+ilp
+web monetization
+coil
+open payments
+rafiki
+iso 20022
+swift gpi
+fednow
+chips
+fedwire
+target2
+sepa instant
+rtp
+the clearing house rtp
+faster payments
+pix brazil
+upi india
+paynow singapore
+promptpay thailand
+duitnow malaysia
+fps hong kong
+swish sweden
+vipps norway
+mobilepay denmark
+twint switzerland
+bizum spain
+blik poland
+ideal netherlands
+sofort germany
+giropay germany
+bancontact belgium
+przelewy24
+eps austria
+multibanco portugal
+satispay italy
+tinkoff pay
+sbp russia
+alipay china
+wechat pay china
+paytm
+phonepe
+google pay india
+amazon pay
+apple cash
+venmo
+cash app
+zelle
+western union
+moneygram
+remitly
+wise
+transferwise
+revolut
+monzo
+n26
+chime
+sofi
+current
+varo
+dave
+earnin
+klarna payments
+affirm payments
+afterpay payments
+zip co
+sezzle payments
+scalapay
+alma
+tabby
+tamara
+atome
+kredivo
+akaku
+fintech ecosystem
+neobank
+digital bank
+banking as a service
+baas
+synapse
+treasury prime
+unit.co
+column
+bond
+galileo
+marqeta
+lithic
+corecard
+i2c inc
+stripe issuing
+adverse media
+sanctions screening
+pep screening
+aml
+anti-money laundering
+kyc
+know your customer
+kyb
+know your business
+cdd
+customer due diligence
+edd
+enhanced due diligence
+sar
+suspicious activity report
+ctr
+currency transaction report
+fincen
+fatf
+ofac
+ofac sdn
+sdn list
+un sanctions
+eu sanctions
+hm treasury
+bis
+entity list
+itar
+ear
+export administration regulations
+defense trade
+compliance screening
+chainalysis
+elliptic
+trm labs
+ciphertrace
+merkle science
+crystal intelligence
+blockchain analytics
+crypto forensics
+glassnode
+cryptoquant
+messari
+coinmetrics
+dune analytics
+dune sql
+nansen
+token terminal
+defillama
+coingecko api
+coinmarketcap api
+binance api
+coinbase api
+kraken api
+okx api
+bybit api
+uniswap
+sushiswap
+pancakeswap
+curve finance
+balancer
+aave
+compound
+makerdao
+dai
+sky
+lido
+liquid staking
+steth
+eigenlayer
+restaking
+avs
+actively validated services
+celestia
+modular blockchain
+avail
+eigenDA
+data availability
+rollups
+optimistic rollups
+zk-rollups
+arbitrum
+optimism
+base
+blast
+zksync
+starknet
+scroll
+linea
+polygon zkEVM
+polygon pos
+manta
+mode network
+zora
+immutable x
+ronin
+solana
+sealevel
+solana program library
+spl tokens
+anchor framework
+rust solana
+solana web3.js
+helius
+quicknode
+alchemy
+infura
+ankr
+moralis
+tatum
+thirdweb
+biconomy
+account abstraction
+erc-4337
+bundlers
+paymasters
+smart accounts
+safe
+gnosis safe
+argent
+zerion
+rabby
+metamask
+phantom wallet
+solflare
+keplr
+leap wallet
+rainbow wallet
+trust wallet
+ledger
+trezor
+gridplus
+tangem
+coldcard
+bitbox
+hardware wallet
+bip32
+bip39
+bip44
+mnemonic seed
+derivation path
+secp256k1
+ed25519 crypto
+bls signatures
+threshold signatures
+mpc wallet
+fireblocks
+fordefi
+copper
+qredo
+dfns
+web3auth
+privy
+dynamic.xyz
+capsule
+turnkey
+embedded wallets
+social login web3
+gasless transactions
+eip-712
+typed signatures
+permit2
+meta-transactions
+relayers
+gelato network
+keep3r
+chainlink
+chainlink oracles
+chainlink vrf
+chainlink ccip
+pyth network
+band protocol
+api3
+redstone oracle
+chronicle oracle
+uma
+optimistic oracle
+tellor
+twap
+time weighted average price
+uniswap twap
+dex aggregators
+1inch
+paraswap
+cowswap
+odos
+kyberswap
+openocean
+yield aggregators
+yearn finance
+convex finance
+beefy finance
+autofarm
+perp dex
+dydx
+gmx
+hyperliquid
+drift protocol
+jupiter
+jupiter aggregator
+raydium
+orca dex
+meteora
+whirlpools
+concentrated liquidity
+clmm
+uniswap v3
+uniswap v4
+hooks
+uniswap hooks
+balancer v2
+balancer v3
+curve stableswap
+crypto pools
+amm
+automated market maker
+il
+impermanent loss
+loss versus rebalancing
+lvr
+mev
+maximal extractable value
+miner extractable value
+flashbots
+mev-boost
+builder
+proposer-builder separation
+pbs ethereum
+suave
+searcher
+arbitrage bot
+liquidator bot
+sandwich attack
+frontrunning
+backrunning
+private mempool
+flashbots protect
+mempool
+mempool.space
+etherscan
+blockscout
+solscan
+subscan
+basescan
+arbiscan
+optimistic etherscan
+snowtrace
+polygonscan
+ftmscan
+cronoscan
+celoscan
+moonscan
+tenderly
+foundry forge
+foundry cast
+foundry anvil
+hardhat network
+ganache
+truffle suite
+remix ide
+ethlint
+solhint
+slither
+mythril
+securify
+manticore sol
+echidna
+medusa fuzzer
+certora
+formal verification sol
+halmos
+kontract
+crytic
+trail of bits
+openzeppelin
+openzeppelin contracts
+solmate
+erc-20
+erc-721
+erc-1155
+erc-4626
+tokenized vaults
+reentrancy guard
+pausable
+ownable
+access control
+upgradeable contracts
+proxy pattern web3
+uups
+transparent proxy
+beacon proxy
+diamond pattern
+erc-2535
+minimal proxy
+erc-1167
+create2
+deterministic deployment
+solidity compiler
+solc
+yul
+assembly yul
+evm
+ethereum virtual machine
+evm opcodes
+gas optimization
+calldata
+memory
+storage
+transient storage
+tstore
+tload
+cancun upgrade
+dencun
+eip-4844
+proto-danksharding
+blob transactions
+blobs
+eip-1559
+base fee
+priority fee
+gas limit
+gas price
+gwei
+wei
+satoshi
+sat
+bitcoin script
+taproot
+schnorr signatures
+mast
+tapscript
+segwit
+bech32
+legacy bitcoin
+ordinals
+inscriptions
+brc-20
+runes
+runes protocol
+rgb protocol
+omni layer
+counterparty
+stacks
+rsk
+liquid network
+elements platform
+cln plugins
+lnd hub
+alby hub
+voltage cloud
+umbrel
+citadel
+raspi blitz
+myNode
+start9
+embassy os
+sovereign node
+self-hosting
+homelab
+homeserver
+proxmox homelab
+unraid
+trueos
+freenas
+truenas core
+truenas scale
+openmediavault
+omv
+casaos
+zimaos
+cosmos-server
+yunohost
+caprover
+coolify
+dokku
+porter
+portainer
+yacht
+komga
+kavita
+calibre-web
+jellyfin
+plex
+emby
+navidrome
+subsonic
+airsonic
+audiobookshelf
+paperless-ngx
+stirling-pdf
+vaultwarden
+bitwarden
+nextcloud
+owncloud
+seafile
+syncthing
+duplicati
+borgbackup
+restic
+kopia
+rclone
+photoprism
+immich
+librephotos
+adguard
+pihole
+tailscale subnet
+wireguard easy
+nginx proxy manager
+caddy proxy
+traefik dashboard
+uptime kuma
+gatus
+statping
+glance
+homepage
+homer dashboard
+flame dashboard
+heimdall
+dashy
+organizr
+wikijs
+bookstack
+trilium
+obsidian
+logseq
+joplin
+standard notes
+affine
+anytype
+appflowy
+notion
+coda
+evernote
+onenote
+roam research
+capacities
+remnote
+scrintal
+heuristic
+algorithm
+data engineering

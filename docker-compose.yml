@@ -1,0 +1,56 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: hiretrend_mongo
+    restart: unless-stopped
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - hiretrend_net
+
+  hadoop:
+    image: apache/hadoop:3.3.6
+    container_name: hiretrend_hadoop
+    hostname: hadoop
+    restart: unless-stopped
+    environment:
+      ENSURE_NAMENODE_DIR: "/data/dfs/name"
+      HDFS-SITE.XML_dfs.replication: "1"
+      HDFS-SITE.XML_dfs.http.address: "0.0.0.0:9870"
+    command: ["hdfs", "namenode"]
+    ports:
+      - "9870:9870"   # HDFS Web UI
+      - "9000:9000"   # NameNode IPC
+    volumes:
+      - ./:/workspace
+      - hadoop_data:/data
+    networks:
+      - hiretrend_net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: hiretrend_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - DB_NAME=hiretrend
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - mongodb
+    networks:
+      - hiretrend_net
+
+networks:
+  hiretrend_net:
+    driver: bridge
+
+volumes:
+  mongo_data:
+  hadoop_data:

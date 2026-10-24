@@ -1,0 +1,483 @@
+/* ══════════════════════════════════════════════════════════════
+   HireTrend – One-Page Executive Dashboard
+   Matches exact reference design:
+   Teal (#0E5F59) · Warm Ochre (#B45309) · Indigo (#4F46E5) · Soft BG (#F0F4F8)
+   ══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bg-page: #EEF2F6;
+  --bg-card: #FFFFFF;
+  --border-card: #E5E9F0;
+
+  --teal-primary: #0E5F59;
+  --teal-dark: #09433F;
+  --teal-medium: #2C8A83;
+  --teal-light: #80CDC1;
+  --teal-track: #E2E8F0;
+
+  --ochre-primary: #B86214;
+  --ochre-track: #F7E5D0;
+
+  --indigo-primary: #4F46E5;
+  --indigo-dark: #3F37A8;
+
+  --text-dark: #111827;
+  --text-body: #374151;
+  --text-muted: #6B7280;
+  --text-subtle: #9CA3AF;
+
+  --radius-card: 14px;
+  --radius-bar: 9999px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 32px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ─── Top Header ────────────────────────────────────────────── */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge-sample {
+  background-color: #FEF3C7;
+  color: #B45309;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #FDE68A;
+}
+
+.filter-select {
+  background-color: var(--bg-card);
+  border: 1px solid #D1D5DB;
+  color: var(--text-dark);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 12px;
+  border-radius: var(--radius-md);
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: border-color 0.15s ease;
+}
+
+.filter-select:focus {
+  border-color: var(--teal-primary);
+}
+
+.btn-upload {
+  background-color: var(--teal-primary);
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.btn-upload:hover {
+  background-color: var(--teal-dark);
+}
+
+/* ─── Metric Cards (Top 4) ──────────────────────────────────── */
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .metrics-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .metrics-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metric-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+/* ─── Two-Column Grid Rows ──────────────────────────────────── */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 860px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Generic Card ─────────────────────────────────────────── */
+.dash-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 24px 28px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.card-caption {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-top: 18px;
+  line-height: 1.4;
+}
+
+/* ─── Horizontal Bar Items ─────────────────────────────────── */
+.bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  flex: 1;
+}
+
+.bar-item {
+  display: grid;
+  grid-template-columns: 130px 1fr 60px;
+  align-items: center;
+  gap: 14px;
+}
+
+.bar-label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-body);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar-track {
+  height: 11px;
+  background-color: var(--teal-track);
+  border-radius: var(--radius-bar);
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: var(--radius-bar);
+  transition: width 0.4s ease;
+}
+
+.bar-fill.teal {
+  background-color: var(--teal-primary);
+}
+
+.bar-fill.ochre {
+  background-color: var(--ochre-primary);
+}
+
+.bar-track.ochre-track {
+  background-color: var(--ochre-track);
+}
+
+.bar-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-body);
+  text-align: right;
+  font-feature-settings: 'tnum';
+}
+
+/* ─── Grouped Bar Chart (Freshers by Level) ─────────────────── */
+.grouped-bars-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 165px;
+  padding-top: 10px;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 12px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 20%;
+}
+
+.bars-cluster {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 130px;
+}
+
+.vertical-bar {
+  width: 14px;
+  border-radius: 3px 3px 0 0;
+  transition: height 0.3s ease;
+}
+
+.bar-group-label {
+  font-size: 0.82rem;
+  color: var(--text-body);
+  font-weight: 500;
+}
+
+.legend-inline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+/* ─── Correlation Heatmap Matrix ────────────────────────────── */
+.heatmap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.heatmap-col-headers {
+  display: grid;
+  grid-template-columns: 60px repeat(5, 1fr);
+  gap: 6px;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+
+.heatmap-row {
+  display: grid;
+  grid-template-columns: 60px repeat(5, 1fr);
+  gap: 6px;
+  align-items: center;
+}
+
+.heatmap-row-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-align: left;
+}
+
+.heatmap-cell {
+  height: 26px;
+  border-radius: 4px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  cursor: pointer;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+/* ─── Multi-bar items (US vs Europe) ────────────────────────── */
+.multibar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.multibar-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.multibar-label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-body);
+}
+
+.multibar-stacks {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sub-bar-track {
+  height: 6px;
+  background-color: var(--teal-track);
+  border-radius: var(--radius-bar);
+  overflow: hidden;
+}
+
+.sub-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-bar);
+}
+
+/* ─── Big Trend Line Chart ──────────────────────────────────── */
+.trend-chart-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 28px 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.trend-chart-container {
+  position: relative;
+  height: 240px;
+  margin-top: 16px;
+}
+
+/* ─── Interactive Skill Checker Form ────────────────────────── */
+.skill-checker-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.skill-input {
+  flex: 1;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: var(--radius-md);
+  padding: 9px 14px;
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+}
+
+.skill-input:focus {
+  border-color: var(--teal-primary);
+  box-shadow: 0 0 0 2px rgba(14, 95, 89, 0.15);
+}
+
+.btn-match {
+  background-color: var(--teal-primary);
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.btn-match:hover {
+  background-color: var(--teal-dark);
+}
+
+/* ─── Footer Fine Print ─────────────────────────────────────── */
+.dashboard-footer {
+  text-align: left;
+  font-size: 0.73rem;
+  color: var(--text-subtle);
+  line-height: 1.6;
+  margin-top: 4px;
+}
