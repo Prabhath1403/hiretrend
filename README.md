@@ -15,31 +15,24 @@
 
 ```mermaid
 flowchart TD
-    subgraph S0["Stage 0: Ingestion & Normalization"]
+    subgraph S0["Stage 0: Raw Ingestion into MongoDB Data Lake"]
         A["📦 Kaggle LinkedIn Dataset (1.3M Postings / ~5.8 GB)\n(linkedin_job_postings.csv, job_skills.csv, job_summary.csv)"]
         A --> B["🐍 scripts/merge_asaniczka.py\n(Streaming merge with <300MB RAM)"]
-        B --> C["📄 merged_asaniczka.jsonl (5.7 GB)"]
-        C --> D["🐍 normalize.py\n(Standardize to uniform JSON Lines)"]
-        D --> E["📄 /tmp/norm_asaniczka.jsonl (6.0 GB)"]
+        B --> C["🍃 mongoimport\n(Direct Raw Ingestion)"]
+        C --> D["🗄️ MongoDB raw_jobs Collection\n(1,297,332 raw job postings stored untouched)"]
     end
 
-    subgraph S1["Stage 1: Distributed Hadoop Processing"]
-        E --> F["📤 HDFS Ingestion: /hiretrend/raw\n(Split into 46 blocks of 128MB)"]
-        F --> G["⚙️ Hadoop Streaming MapReduce\n• mapper.py (HTML stripping + skills matching + SHA-256 hash)\n• reducer.py (Content-hash deduplication)"]
-        G --> H["📄 HDFS Output: /hiretrend/clean\n(927,709 unique postings / 369k duplicates removed)"]
+    subgraph S1["Stage 1: Data Processing & Cleaning (From MongoDB)"]
+        D --> E["⚙️ Data Processing Pipeline\n• Schema Normalization (title cleaning, date/salary parsing)\n• HTML Stripping & Text Sanitization\n• Skill Extraction via Dictionary (6,938 skills)\n• SHA-256 Content-Hash Deduplication\n(Direct MongoDB Stream OR Distributed Hadoop MapReduce)"]
+        E --> F["🍃 Cleaned Collection: MongoDB jobs\n(927,709 unique postings / 369,623 duplicates removed)"]
+        F --> G["🔍 Query Indexing: title_norm, year+source, skills, source"]
     end
 
-    subgraph S2["Stage 2: MongoDB Ingestion & Indexing"]
-        H --> I["📥 hdfs dfs -cat -> clean.jsonl (3.9 GB)"]
-        I --> J["🍃 mongoimport -> hiretrend.jobs collection"]
-        J --> K["🔍 Indexing: title_norm, year+source, skills"]
+    subgraph S2["Stage 2: MongoDB MapReduce Analytics (J0-J6)"]
+        G --> L["📊 Batch Jobs: mongo/run_all_jobs.js\n• J0: title_totals (507k roles)\n• J1: top_skills (15.2M mappings)\n• J2: skill_pairs (11.9M pairs)\n• J3: salary_by_skill\n• J4: skill_growth (2.4M records)\n• J5: skills_by_level (2.6M records)\n• J6: source_compare (2.4M records)"]
     end
 
-    subgraph S3["Stage 3: MongoDB MapReduce Analytics (J0-J6)"]
-        K --> L["📊 Batch Jobs: mongo/run_all_jobs.js\n• J0: title_totals (507k roles)\n• J1: top_skills (15.2M mappings)\n• J2: skill_pairs (11.9M pairs)\n• J3: salary_by_skill\n• J4: skill_growth (2.4M records)\n• J5: skills_by_level (2.6M records)\n• J6: source_compare (2.4M records)"]
-    end
-
-    subgraph S4["Stage 4: Serving & Visualization"]
+    subgraph S3["Stage 3: Serving & Visualization"]
         L --> M["🚀 FastAPI Backend (Port 8000)\nREST Endpoints with instant metadata count"]
         M --> N["⚛️ React.js Executive Dashboard (Port 5173)\nSingle-Page Minimal Analytics UI"]
     end
@@ -103,6 +96,7 @@ hiretrend/
 │   └── run_all_jobs.js       # Master sequential runner script
 ├── scripts/
 │   ├── merge_asaniczka.py    # Memory-safe streaming CSV merge script (<300MB RAM)
+│   ├── process_from_mongo.py # Stage 1: Data processing directly from MongoDB raw_jobs
 │   ├── run_pipeline.sh       # One-command automated end-to-end pipeline runner
 │   └── setup_env.sh          # System environment installation script
 ├── mapper.py                 # Hadoop Streaming Mapper (HTML stripping + skills matching)
@@ -147,11 +141,10 @@ chmod +x scripts/run_pipeline.sh
 
 This single command will:
 1. Verify Hadoop HDFS and MongoDB daemons.
-2. Normalize schema into uniform JSON Lines (`normalize.py`).
-3. Upload to HDFS across 46 blocks.
-4. Execute distributed **Hadoop Streaming MapReduce** (`mapper.py` + `reducer.py`).
-5. Export clean data and run **`mongoimport`** with indexes on `title_norm`, `year+source`, and `skills`.
-6. Run all **7 MapReduce analytics jobs (J0 to J6)**.
+2. Ingest the raw Kaggle dataset directly into MongoDB (`hiretrend.raw_jobs` - 1,297,332 records).
+3. Execute **Data Processing & Cleaning** directly from MongoDB (`raw_jobs` -> normalization + HTML stripping + skill matching + SHA-256 deduplication -> `hiretrend.jobs` - 927,709 clean records).
+4. Build high-speed query indexes on `title_norm`, `year+source`, `skills`, and `source`.
+5. Run all **7 MapReduce analytics jobs (J0 to J6)**.
 
 ---
 

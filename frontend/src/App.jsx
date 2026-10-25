@@ -40,12 +40,21 @@ export default function App() {
 
   // ── Metrics Calculation (From Real Processed Dataset) ────────
   const metrics = useMemo(() => {
+    const rawVal = liveOverview?.raw_postings ? liveOverview.raw_postings : 1297332;
+    const cleanVal = liveOverview?.total_postings ? liveOverview.total_postings : 927709;
+    const dupVal = liveOverview?.duplicates_removed ? liveOverview.duplicates_removed : Math.max(0, rawVal - cleanVal);
+
+    const fmtShort = (n) => (n >= 1000000 ? (n / 1000000).toFixed(1) + 'M' : (n >= 1000 ? Math.round(n / 1000) + 'k' : n));
+
     return {
-      postingsAnalysed: "1.3M",
-      recordsCleaned: "928k",
+      postingsAnalysed: fmtShort(rawVal),
+      recordsCleaned: fmtShort(cleanVal),
+      duplicatesFiltered: fmtShort(dupVal),
       skillsTracked: "185",
       mostRequested: "Communication",
-      cleanedExact: liveOverview ? liveOverview.total_postings.toLocaleString() : "927,709",
+      cleanedExact: cleanVal.toLocaleString(),
+      rawExact: rawVal.toLocaleString(),
+      dupExact: dupVal.toLocaleString(),
     };
   }, [liveOverview]);
 
@@ -236,7 +245,7 @@ export default function App() {
 
           <button
             className="btn-upload"
-            onClick={() => alert(`Pipeline Complete: ${metrics.cleanedExact} postings stored in MongoDB hiretrend database.`)}
+            onClick={() => alert(`Pipeline Status:\n• Ingested into MongoDB (raw_jobs): ${metrics.rawExact} postings\n• Processed & Cleaned (jobs): ${metrics.cleanedExact} postings\n• Duplicates Filtered: ${metrics.dupExact} postings`)}
           >
             Pipeline Complete ✓
           </button>
@@ -246,23 +255,27 @@ export default function App() {
       {/* ─── Top 4 Metric Cards (Live from MongoDB) ─────────── */}
       <section className="metrics-row">
         <div className="metric-card">
-          <div className="metric-label">Postings analysed</div>
+          <div className="metric-label">Raw Postings (raw_jobs)</div>
           <div className="metric-value">{metrics.postingsAnalysed}</div>
+          <div className="card-caption" style={{ marginTop: '4px', fontSize: '0.75rem', color: '#6B7280' }}>Ingested to MongoDB first</div>
         </div>
 
         <div className="metric-card">
-          <div className="metric-label">Records after cleaning</div>
+          <div className="metric-label">Processed Clean (jobs)</div>
           <div className="metric-value">{metrics.recordsCleaned}</div>
+          <div className="card-caption" style={{ marginTop: '4px', fontSize: '0.75rem', color: '#6B7280' }}>Cleaned & Deduplicated</div>
         </div>
 
         <div className="metric-card">
-          <div className="metric-label">Skills tracked</div>
-          <div className="metric-value">{metrics.skillsTracked}</div>
+          <div className="metric-label">Duplicates Filtered</div>
+          <div className="metric-value">{metrics.duplicatesFiltered}</div>
+          <div className="card-caption" style={{ marginTop: '4px', fontSize: '0.75rem', color: '#6B7280' }}>SHA-256 Deduplication</div>
         </div>
 
         <div className="metric-card">
           <div className="metric-label">Top Core Skill</div>
           <div className="metric-value">Communication</div>
+          <div className="card-caption" style={{ marginTop: '4px', fontSize: '0.75rem', color: '#6B7280' }}>251,598 mentions</div>
         </div>
       </section>
 

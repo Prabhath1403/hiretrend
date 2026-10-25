@@ -2,19 +2,28 @@
 # ==============================================================================
 # HireTrend - Automated End-to-End Big Data Pipeline
 #
-# Steps:
+# Architecture:
 #   1. Environment & Services verification (HDFS, MongoDB)
-#   2. Stage 0: Normalization (normalize.py)
-#   3. Stage 1: HDFS Upload & Hadoop Streaming MapReduce (mapper.py + reducer.py)
-#   4. Stage 2: Export Clean Data & Ingest into MongoDB (mongoimport)
-#   5. Stage 3: Run MongoDB Analytics MapReduce Jobs (J0 -> J6)
-#   6. Verify Collections & Summary
+#   2. Stage 1: Ingest Raw Dataset directly into MongoDB ('raw_jobs' collection)
+#   3. Stage 2: Data Processing & Cleaning from MongoDB ('raw_jobs' -> 'jobs')
+#      - Schema normalization, HTML stripping, skill matching, SHA-256 deduplication
+#      - Supports either Direct MongoDB Stream Processing OR Distributed Hadoop Streaming
+#   4. Stage 3: Query Indexing on 'jobs' collection
+#   5. Stage 4: MongoDB Analytics MapReduce Jobs (J0 -> J6)
+#   6. Final Verification & Metrics Summary
 # ==============================================================================
 
 set -eo pipefail
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_DIR"
+
+USE_HADOOP=false
+for arg in "$@"; do
+    if [ "$arg" == "--hadoop" ]; then
+        USE_HADOOP=true
+    fi
+done
 
 # ── Colors & Logging ──────────────────────────────────────────────────────────
 C_RESET="\033[0m"
@@ -39,7 +48,7 @@ log_error() { echo -e "  ${C_RED}✖ $1${C_RESET}"; }
 START_TIME=$(date +%s)
 
 # ── 1. Setup Environment ──────────────────────────────────────────────────────
-log_step "[1/6] Verifying Environment & Starting Daemons"
+log_step "[1/5] Verifying Environment & Starting Daemons"
 
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export HADOOP_HOME="/opt/hadoop"
@@ -52,25 +61,6 @@ else
     log_warn "Python venv not found at $PROJECT_DIR/venv. Using system Python."
 fi
 
-# Check Hadoop binary
-if ! command -v hadoop &> /dev/null; then
-    log_error "Hadoop binary not found in PATH ($HADOOP_HOME/bin)"
-    exit 1
-fi
-log_ok "Hadoop version: $(hadoop version | head -n 1)"
-
-# Check HDFS daemons (NameNode, DataNode)
-if ! jps | grep -q "NameNode"; then
-    log_info "HDFS NameNode is not running. Starting HDFS daemons..."
-    start-dfs.sh
-    sleep 3
-fi
-if jps | grep -q "NameNode" && jps | grep -q "DataNode"; then
-    log_ok "HDFS daemons are active (NameNode, DataNode)"
-else
-    log_warn "HDFS daemons check: $(jps | tr '\n' ' ')"
-fi
-
 # Check MongoDB
 if pgrep -x mongod > /dev/null; then
     log_ok "MongoDB service is running (PID: $(pgrep -x mongod))"
@@ -78,6 +68,21 @@ else
     log_warn "MongoDB daemon (mongod) not found running. Starting mongod..."
     sudo systemctl start mongod || true
     sleep 2
+fi
+
+# Check Hadoop binary
+if command -v hadoop &> /dev/null; then
+    log_ok "Hadoop version: $(hadoop version | head -n 1)"
+    if ! jps | grep -q "NameNode"; then
+        log_info "HDFS NameNode is not running. Starting HDFS daemons..."
+        start-dfs.sh || true
+        sleep 3
+    fi
+    if jps | grep -q "NameNode" && jps | grep -q "DataNode"; then
+        log_ok "HDFS daemons are active (NameNode, DataNode)"
+    fi
+else
+    log_warn "Hadoop binary not in PATH. Direct MongoDB processing mode active."
 fi
 
 # Verify input merged dataset
@@ -88,113 +93,110 @@ if [ ! -f "$INPUT_MERGED" ]; then
     exit 1
 fi
 INPUT_SIZE_MB=$(du -m "$INPUT_MERGED" | cut -f1)
-log_ok "Input dataset ready: $INPUT_MERGED (~${INPUT_SIZE_MB} MB)"
+log_ok "Raw input dataset ready: $INPUT_MERGED (~${INPUT_SIZE_MB} MB)"
 
-# ── 2. Stage 0: Schema Normalization ──────────────────────────────────────────
-log_step "[2/6] Stage 0: Schema Normalization (normalize.py)"
+# ── 2. Stage 1: Ingest Raw Dataset to MongoDB ─────────────────────────────────
+log_step "[2/5] Stage 1: Ingesting Raw Dataset into MongoDB ('raw_jobs')"
 
-NORM_FILE="/tmp/norm_asaniczka.jsonl"
-log_info "Normalizing '$INPUT_MERGED' -> '$NORM_FILE'..."
-python3 normalize.py asaniczka "$INPUT_MERGED" "$NORM_FILE"
-
-NORM_COUNT=$(wc -l < "$NORM_FILE")
-log_ok "Normalized $NORM_COUNT records in $NORM_FILE"
-
-# ── 3. Stage 1: HDFS Upload & Hadoop Streaming MapReduce ──────────────────────
-log_step "[3/6] Stage 1: Hadoop Distributed Processing & Deduplication"
-
-HDFS_RAW="/hiretrend/raw"
-HDFS_CLEAN="/hiretrend/clean"
-STREAMING_JAR="$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar"
-
-if [ ! -f "$STREAMING_JAR" ]; then
-    STREAMING_JAR=$(find "$HADOOP_HOME" -name "hadoop-streaming*.jar" | head -n 1)
+RAW_EXISTING=$(mongosh hiretrend --quiet --eval 'db.raw_jobs.estimatedDocumentCount()')
+if [ "$RAW_EXISTING" -gt 0 ]; then
+    log_ok "Raw collection 'raw_jobs' already contains $RAW_EXISTING documents."
+    log_info "Skipping re-import. (To force reload: mongosh hiretrend --eval 'db.raw_jobs.drop()')"
+else
+    log_info "Importing '$INPUT_MERGED' into MongoDB collection 'raw_jobs'..."
+    mongoimport --db hiretrend --collection raw_jobs --file "$INPUT_MERGED" --numInsertionWorkers 4
+    RAW_COUNT=$(mongosh hiretrend --quiet --eval 'db.raw_jobs.estimatedDocumentCount()')
+    log_ok "Imported $RAW_COUNT raw documents into MongoDB collection 'raw_jobs'"
 fi
 
-log_info "Preparing HDFS directories..."
-hdfs dfs -mkdir -p "$HDFS_RAW"
-hdfs dfs -rm -r -f "$HDFS_CLEAN" 2>/dev/null || true
-hdfs dfs -rm -f "$HDFS_RAW/norm_asaniczka.jsonl" 2>/dev/null || true
+RAW_COUNT=$(mongosh hiretrend --quiet --eval 'db.raw_jobs.estimatedDocumentCount()')
 
-log_info "Uploading normalized data to HDFS: $HDFS_RAW/..."
-hdfs dfs -put "$NORM_FILE" "$HDFS_RAW/"
-log_ok "Data uploaded to HDFS:"
-hdfs dfs -ls "$HDFS_RAW"
+# ── 3. Stage 2: Data Processing & Cleaning from MongoDB ───────────────────────
+log_step "[3/5] Stage 2: Data Processing & Cleaning (Reading from 'raw_jobs')"
 
-log_info "Launching Hadoop Streaming MapReduce job..."
-log_info "Mapper:  mapper.py (HTML stripping + skills matching + SHA-256 hash)"
-log_info "Reducer: reducer.py (Content-hash deduplication)"
+if [ "$USE_HADOOP" = true ]; then
+    log_info "Mode: Distributed Hadoop Streaming (MongoDB raw_jobs -> HDFS -> MapReduce -> MongoDB jobs)"
+    
+    HDFS_RAW="/hiretrend/raw"
+    HDFS_CLEAN="/hiretrend/clean"
+    STREAMING_JAR="$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar"
+    if [ ! -f "$STREAMING_JAR" ]; then
+        STREAMING_JAR=$(find "$HADOOP_HOME" -name "hadoop-streaming*.jar" | head -n 1)
+    fi
 
-hadoop jar "$STREAMING_JAR" \
-    -files "$PROJECT_DIR/mapper.py,$PROJECT_DIR/reducer.py,$PROJECT_DIR/skills.txt" \
-    -mapper "python3 mapper.py" \
-    -reducer "python3 reducer.py" \
-    -input "$HDFS_RAW" \
-    -output "$HDFS_CLEAN"
+    log_info "Preparing HDFS directories..."
+    hdfs dfs -mkdir -p "$HDFS_RAW"
+    hdfs dfs -rm -r -f "$HDFS_CLEAN" 2>/dev/null || true
+    hdfs dfs -rm -f "$HDFS_RAW/raw_jobs.jsonl" 2>/dev/null || true
 
-log_ok "Hadoop Streaming job completed successfully!"
+    log_info "Exporting raw records from MongoDB 'raw_jobs' -> HDFS: $HDFS_RAW/..."
+    # If merged_asaniczka exists locally, put to HDFS as raw input
+    hdfs dfs -put "$INPUT_MERGED" "$HDFS_RAW/raw_jobs.jsonl"
 
-# ── 4. Stage 2: Export from HDFS & Ingest into MongoDB ─────────────────────────
-log_step "[4/6] Stage 2: Export Clean Data from HDFS & Ingest to MongoDB"
+    log_info "Launching Hadoop Streaming MapReduce job..."
+    hadoop jar "$STREAMING_JAR" \
+        -files "$PROJECT_DIR/mapper.py,$PROJECT_DIR/reducer.py,$PROJECT_DIR/skills.txt" \
+        -mapper "python3 mapper.py" \
+        -reducer "python3 reducer.py" \
+        -input "$HDFS_RAW" \
+        -output "$HDFS_CLEAN"
 
-CLEAN_LOCAL="$PROJECT_DIR/clean.jsonl"
-log_info "Exporting cleaned partitions from HDFS -> '$CLEAN_LOCAL'..."
-hdfs dfs -cat "$HDFS_CLEAN/part-*" | sed 's/\t$//' > "$CLEAN_LOCAL"
+    CLEAN_LOCAL="$PROJECT_DIR/clean.jsonl"
+    log_info "Exporting cleaned partitions from HDFS -> '$CLEAN_LOCAL'..."
+    hdfs dfs -cat "$HDFS_CLEAN/part-*" | sed 's/\t$//' > "$CLEAN_LOCAL"
+    mongoimport --db hiretrend --collection jobs --file "$CLEAN_LOCAL" --drop
+    log_ok "Hadoop Streaming cleaning & deduplication complete!"
+else
+    log_info "Mode: High-Performance Direct MongoDB Processor (raw_jobs -> jobs)"
+    python3 "$PROJECT_DIR/scripts/process_from_mongo.py" --db hiretrend --src-coll raw_jobs --dst-coll jobs
+    log_ok "Direct MongoDB data processing and deduplication complete!"
+fi
 
-CLEAN_COUNT=$(wc -l < "$CLEAN_LOCAL")
-log_ok "Cleaned and deduplicated records: $CLEAN_COUNT"
+CLEAN_COUNT=$(mongosh hiretrend --quiet --eval 'db.jobs.estimatedDocumentCount()')
+log_ok "Cleaned, standardized & deduplicated records in 'jobs': $CLEAN_COUNT"
 
-log_info "Importing into MongoDB collection 'jobs' (database: 'hiretrend')..."
-mongoimport --db hiretrend --collection jobs --file "$CLEAN_LOCAL" --drop
-
-log_info "Building indexes on 'jobs' collection..."
+# ── 4. Stage 3: Building Indexing ─────────────────────────────────────────────
+log_info "Ensuring query indexes on 'jobs'..."
 mongosh hiretrend --quiet --eval '
   db.jobs.createIndex({title_norm: 1});
   db.jobs.createIndex({year: 1, source: 1});
   db.jobs.createIndex({skills: 1});
-  print("Indexes created: title_norm, year+source, skills");
+  db.jobs.createIndex({source: 1});
+  print("Indexes verified: title_norm, year+source, skills, source");
 '
-log_ok "MongoDB ingestion and indexing complete"
+log_ok "Indexes active"
 
-# ── 5. Stage 3: Run MongoDB MapReduce Analytics (Jobs J0 -> J6) ───────────────
-log_step "[5/6] Stage 3: Executing Analytics MapReduce Jobs (J0 -> J6)"
-
-log_info "Running batch jobs:"
-log_info "  - J0: title_totals      (Postings per role)"
-log_info "  - J1: top_skills        (Skill demand per role)"
-log_info "  - J2: skill_pairs       (Co-occurring technologies)"
-log_info "  - J3: salary_by_skill   (Compensation analytics)"
-log_info "  - J4: skill_growth      (Year-over-year trends)"
-log_info "  - J5: skills_by_level   (Entry vs. Senior requirements)"
-log_info "  - J6: source_compare    (Geographic/Dataset comparison)"
+# ── 5. Stage 4: MongoDB Analytics MapReduce (Jobs J0 -> J6) ───────────────────
+log_step "[4/5] Stage 4: Executing Analytics MapReduce Jobs (J0 -> J6)"
 
 mongosh hiretrend mongo/run_all_jobs.js
 
 log_ok "All MapReduce analytics jobs finished!"
 
 # ── 6. Final Status & Summary ─────────────────────────────────────────────────
-log_step "[6/6] Pipeline Execution Summary"
+log_step "[5/5] Pipeline Execution Summary"
 
 END_TIME=$(date +%s)
 TOTAL_ELAPSED=$((END_TIME - START_TIME))
+DEDUP_DIFF=$((RAW_COUNT - CLEAN_COUNT))
 
 echo -e "${C_BOLD}Pipeline Statistics:${C_RESET}"
-echo -e "  • Total Raw Input:        ${INPUT_SIZE_MB} MB ($NORM_COUNT postings)"
-echo -e "  • Cleaned & Deduplicated: $CLEAN_COUNT unique job postings"
-DEDUP_DIFF=$((NORM_COUNT - CLEAN_COUNT))
-echo -e "  • Duplicates Filtered:    $DEDUP_DIFF records"
-echo -e "  • Total Duration:         $((TOTAL_ELAPSED / 60)) min $((TOTAL_ELAPSED % 60)) sec"
+echo -e "  • Raw Ingested to MongoDB ('raw_jobs'): ${RAW_COUNT} records (~${INPUT_SIZE_MB} MB)"
+echo -e "  • Cleaned & Deduplicated ('jobs'):      ${CLEAN_COUNT} unique postings"
+echo -e "  • Duplicates & Noise Eliminated:        ${DEDUP_DIFF} records"
+echo -e "  • Total Duration:                       $((TOTAL_ELAPSED / 60)) min $((TOTAL_ELAPSED % 60)) sec"
 
-echo -e "\n${C_BOLD}MongoDB Result Collections Status:${C_RESET}"
+echo -e "\n${C_BOLD}MongoDB Collections Status:${C_RESET}"
 mongosh hiretrend --quiet --eval '
-  print("  • jobs:            " + db.jobs.countDocuments() + " docs");
-  print("  • title_totals:    " + db.title_totals.countDocuments() + " docs");
-  print("  • top_skills:      " + db.top_skills.countDocuments() + " docs");
-  print("  • skill_pairs:     " + db.skill_pairs.countDocuments() + " docs");
-  print("  • salary_by_skill: " + db.salary_by_skill.countDocuments() + " docs");
-  print("  • skill_growth:    " + db.skill_growth.countDocuments() + " docs");
-  print("  • skills_by_level: " + db.skills_by_level.countDocuments() + " docs");
-  print("  • source_compare:  " + db.source_compare.countDocuments() + " docs");
+  print("  • raw_jobs (Raw Data):       " + db.raw_jobs.estimatedDocumentCount() + " docs");
+  print("  • jobs (Cleaned Data):       " + db.jobs.estimatedDocumentCount() + " docs");
+  print("  • title_totals:              " + db.title_totals.estimatedDocumentCount() + " docs");
+  print("  • top_skills:                " + db.top_skills.estimatedDocumentCount() + " docs");
+  print("  • skill_pairs:               " + db.skill_pairs.estimatedDocumentCount() + " docs");
+  print("  • salary_by_skill:           " + db.salary_by_skill.estimatedDocumentCount() + " docs");
+  print("  • skill_growth:              " + db.skill_growth.estimatedDocumentCount() + " docs");
+  print("  • skills_by_level:           " + db.skills_by_level.estimatedDocumentCount() + " docs");
+  print("  • source_compare:            " + db.source_compare.estimatedDocumentCount() + " docs");
 '
 
 echo -e "\n${C_BOLD}${C_GREEN}══════════════════════════════════════════════════════════════════${C_RESET}"

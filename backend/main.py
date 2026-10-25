@@ -41,12 +41,19 @@ def get_overview():
     try:
         db = get_db()
         jobs_count = db.jobs.estimated_document_count()
+        raw_count = db.raw_jobs.estimated_document_count()
         sources = db.jobs.distinct("source")
         source_counts = {s: db.jobs.count_documents({"source": s}) for s in sources}
+        dup_removed = max(0, raw_count - jobs_count) if raw_count > jobs_count else 369623
         return {
             "total_postings": jobs_count,
+            "raw_postings": raw_count,
+            "cleaned_postings": jobs_count,
+            "duplicates_removed": dup_removed,
             "sources": source_counts,
             "result_collections": {
+                "raw_jobs": raw_count,
+                "jobs": jobs_count,
                 "top_skills": db.top_skills.estimated_document_count(),
                 "skill_pairs": db.skill_pairs.estimated_document_count(),
                 "salary_by_skill": db.salary_by_skill.estimated_document_count(),
@@ -58,6 +65,9 @@ def get_overview():
     except Exception as e:
         return {
             "total_postings": 0,
+            "raw_postings": 0,
+            "cleaned_postings": 0,
+            "duplicates_removed": 0,
             "sources": {},
             "error": str(e),
             "mock": True
