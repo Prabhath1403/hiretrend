@@ -9,6 +9,8 @@
 
 **HireTrend** is an end-to-end Big Data analytics system designed to process, deduplicate, and analyze over **1.3 Million real-world job postings (~5.8 GB)** using **Apache Hadoop Streaming (HDFS + MapReduce)** and **MongoDB MapReduce**, exposed via a high-performance **FastAPI** backend and an **Executive Single-Page Dashboard** built in React.js.
 
+> 📖 **Faculty Demo Guide:** See [DEMO_GUIDE.md](file:///home/prabhath/projects/hiretrend/DEMO_GUIDE.md) for quick mongosh inspection commands, before/after document comparisons, and viva Q&A.
+
 ---
 
 ## 🏗️ Architecture Pipeline
